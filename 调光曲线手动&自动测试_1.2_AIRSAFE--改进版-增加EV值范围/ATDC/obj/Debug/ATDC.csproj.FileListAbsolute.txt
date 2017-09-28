@@ -1,0 +1,330 @@
+D:\程序\ATDC\ATDC\bin\Debug\ATDC.exe.config
+D:\程序\ATDC\ATDC\bin\Debug\ATDC.exe
+D:\程序\ATDC\ATDC\bin\Debug\ATDC.pdb
+D:\程序\ATDC\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+D:\程序\ATDC\ATDC\obj\Debug\ATDC.Form1.resources
+D:\程序\ATDC\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+D:\程序\ATDC\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+D:\程序\ATDC\ATDC\obj\Debug\ATDC.exe
+D:\程序\ATDC\ATDC\obj\Debug\ATDC.pdb
+D:\程序\ATDC\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+D:\程序\ATDC - 测试\ATDC\bin\Debug\ATDC.exe.config
+D:\程序\ATDC - 测试\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+D:\程序\ATDC - 测试\ATDC\obj\Debug\ATDC.exe
+D:\程序\ATDC - 测试\ATDC\obj\Debug\ATDC.pdb
+D:\程序\ATDC - 测试\ATDC\bin\Debug\ATDC.exe
+D:\程序\ATDC - 测试\ATDC\bin\Debug\ATDC.pdb
+D:\程序\ATDC - 测试\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+D:\程序\ATDC - 测试\ATDC\obj\Debug\ATDC.Form1.resources
+D:\程序\ATDC - 测试\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+D:\程序\ATDC - 测试\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+D:\程序\ATDC - 测试 - 1定时器\ATDC\bin\Debug\ATDC.exe.config
+D:\程序\ATDC - 测试 - 1定时器\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+D:\程序\ATDC - 测试 - 1定时器\ATDC\obj\Debug\ATDC.exe
+D:\程序\ATDC - 测试 - 1定时器\ATDC\obj\Debug\ATDC.pdb
+D:\程序\ATDC - 测试 - 1定时器\ATDC\bin\Debug\ATDC.exe
+D:\程序\ATDC - 测试 - 1定时器\ATDC\bin\Debug\ATDC.pdb
+D:\程序\ATDC - 测试 - 1定时器\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+D:\程序\ATDC - 测试 - 1定时器\ATDC\obj\Debug\ATDC.Form1.resources
+D:\程序\ATDC - 测试 - 1定时器\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+D:\程序\ATDC - 测试 - 1定时器\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+D:\程序\ATDC - 测试 - 1定时器 - 标识符\ATDC\bin\Debug\ATDC.exe.config
+D:\程序\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+D:\程序\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.exe
+D:\程序\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.pdb
+D:\程序\ATDC - 测试 - 1定时器 - 标识符\ATDC\bin\Debug\ATDC.exe
+D:\程序\ATDC - 测试 - 1定时器 - 标识符\ATDC\bin\Debug\ATDC.pdb
+D:\程序\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+D:\程序\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.Form1.resources
+D:\程序\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+D:\程序\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\陈志永\Desktop\ATDC - 测试 - 1定时器 - 标识符\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\陈志永\Desktop\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\陈志永\Desktop\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\陈志永\Desktop\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\陈志永\Desktop\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\陈志永\Desktop\ATDC - 测试 - 1定时器 - 标识符\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\陈志永\Desktop\ATDC - 测试 - 1定时器 - 标识符\ATDC\bin\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\ATDC - 测试 - 1定时器 - 标识符\ATDC\bin\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\ATDC - 20160920\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\陈志永\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\陈志永\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\ATDC - 20160920\ATDC\bin\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\ATDC - 20160920\ATDC\bin\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\陈志永\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\陈志永\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\陈志永\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\JXY\Desktop\ATDC - 20160920\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\ATDC - 20160920\ATDC\bin\Debug\ATDC.exe
+C:\Users\JXY\Desktop\ATDC - 20160920\ATDC\bin\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\JXY\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\JXY\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\JXY\Desktop\ATDC - 20160920\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\陈志永\Desktop\ATDC - 20160930\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\陈志永\Desktop\ATDC - 20160930\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\陈志永\Desktop\ATDC - 20160930\ATDC\obj\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\ATDC - 20160930\ATDC\obj\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\ATDC - 20160930\ATDC\bin\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\ATDC - 20160930\ATDC\bin\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\ATDC - 20160930\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\陈志永\Desktop\ATDC - 20160930\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\陈志永\Desktop\ATDC - 20160930\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\陈志永\Desktop\ATDC - 20160930\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE\ATDC\bin\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE\ATDC\bin\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\bin\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\bin\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\bin\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\bin\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\newbe\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\newbe\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\newbe\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.exe
+C:\Users\newbe\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.pdb
+C:\Users\newbe\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\bin\Debug\ATDC.exe
+C:\Users\newbe\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\bin\Debug\ATDC.pdb
+C:\Users\newbe\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\newbe\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\newbe\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\newbe\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012--2s\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012--2s\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012--2s\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161012--2s\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\20161012\调光曲线自动检测_1.0_AIRSAFE--20161012--时间间隔变量\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Desktop\20161012\调光曲线自动检测_1.0_AIRSAFE--20161012--时间间隔变量\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Desktop\20161012\调光曲线自动检测_1.0_AIRSAFE--20161012--时间间隔变量\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Desktop\20161012\调光曲线自动检测_1.0_AIRSAFE--20161012--时间间隔变量\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\20161012\调光曲线自动检测_1.0_AIRSAFE--20161012--时间间隔变量\ATDC\bin\Debug\ATDC.exe
+C:\Users\JXY\Desktop\20161012\调光曲线自动检测_1.0_AIRSAFE--20161012--时间间隔变量\ATDC\bin\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\20161012\调光曲线自动检测_1.0_AIRSAFE--20161012--时间间隔变量\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\JXY\Desktop\20161012\调光曲线自动检测_1.0_AIRSAFE--20161012--时间间隔变量\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\JXY\Desktop\20161012\调光曲线自动检测_1.0_AIRSAFE--20161012--时间间隔变量\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\JXY\Desktop\20161012\调光曲线自动检测_1.0_AIRSAFE--20161012--时间间隔变量\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161017--时间间隔变量\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161017--时间间隔变量\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161017--时间间隔变量\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161017--时间间隔变量\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161017--时间间隔变量\ATDC\bin\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161017--时间间隔变量\ATDC\bin\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161017--时间间隔变量\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161017--时间间隔变量\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161017--时间间隔变量\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161017--时间间隔变量\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\bin\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\bin\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+D:\MyProject\C#Project\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\bin\Debug\ATDC.exe.config
+D:\MyProject\C#Project\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+D:\MyProject\C#Project\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.exe
+D:\MyProject\C#Project\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.pdb
+D:\MyProject\C#Project\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\bin\Debug\ATDC.exe
+D:\MyProject\C#Project\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\bin\Debug\ATDC.pdb
+D:\MyProject\C#Project\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+D:\MyProject\C#Project\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.Form1.resources
+D:\MyProject\C#Project\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+D:\MyProject\C#Project\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+D:\ATDC\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+D:\ATDC\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+D:\ATDC\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.Form1.resources
+D:\ATDC\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+D:\ATDC\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+D:\ATDC\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.exe
+D:\ATDC\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\obj\Debug\ATDC.pdb
+D:\ATDC\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\bin\Debug\ATDC.exe.config
+D:\ATDC\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\bin\Debug\ATDC.exe
+D:\ATDC\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\bin\Debug\ATDC.pdb
+D:\ATDC\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\bin\Debug\Microsoft.Office.Client.Education.dll
+D:\ATDC\调光曲线自动检测_1.0_AIRSAFE--20161018--数据拟合\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动测试\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动测试\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动测试\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动测试\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动&自动测试\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动&自动测试\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动&自动测试\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动&自动测试\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动&自动测试\ATDC\bin\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动&自动测试\ATDC\bin\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动&自动测试\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动&自动测试\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动&自动测试\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动&自动测试\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161019--手动&自动测试\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\bin\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\bin\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\JXY\Desktop\调光曲线程序\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\bin\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\bin\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\bin\Debug\Microsoft.Office.Client.Education.dll
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\bin\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\bin\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\JXY\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\bin\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\bin\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\bin\Debug\Microsoft.Office.Client.Education.dll
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161020--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161027--手动&自动测试---测试中\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161027--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161027--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161027--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161027--手动&自动测试---测试中\ATDC\bin\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161027--手动&自动测试---测试中\ATDC\bin\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161027--手动&自动测试---测试中\ATDC\bin\Debug\Microsoft.Office.Client.Education.dll
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161027--手动&自动测试---测试中\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161027--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161027--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161027--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\陈志永\Desktop\调光曲线自动检测_1.0_AIRSAFE--20161027--手动&自动测试---测试中\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161027\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161027\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161027\ATDC\obj\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161027\ATDC\obj\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161027\ATDC\bin\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161027\ATDC\bin\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161027\ATDC\bin\Debug\Microsoft.Office.Client.Education.dll
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161027\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161027\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161027\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161027\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161027\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161028\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161028\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161028\ATDC\obj\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161028\ATDC\obj\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161028\ATDC\bin\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161028\ATDC\bin\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161028\ATDC\bin\Debug\Microsoft.Office.Client.Education.dll
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161028\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161028\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161028\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161028\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161028\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161102\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161102\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161102\ATDC\obj\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161102\ATDC\obj\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161102\ATDC\bin\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161102\ATDC\bin\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161102\ATDC\bin\Debug\Microsoft.Office.Client.Education.dll
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161102\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161102\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161102\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161102\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161102\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161103\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161103\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161103\ATDC\obj\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.0_AIRSAFE--20161103\ATDC\obj\Debug\ATDC.pdb
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--20161108\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--20161108\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--20161108\ATDC\obj\Debug\ATDC.exe
+C:\Users\陈志永\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--20161108\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\bin\Debug\ATDC.exe
+C:\Users\JXY\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\bin\Debug\ATDC.pdb
+C:\Users\JXY\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\JXY\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\JXY\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\JXY\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\JXY\Desktop\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\bin\Debug\ATDC.exe.config
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\obj\Debug\ATDC.exe
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--最终版\ATDC\obj\Debug\ATDC.pdb
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\bin\Debug\ATDC.exe.config
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.exe
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.pdb
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\bin\Debug\ATDC.exe
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\bin\Debug\ATDC.pdb
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.Form1.resources
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+\\192.168.144.11\data\金肖雅\工作\12 20160919 调光曲线自动检测软件编程\调光曲线自动检测软件编程\01程序\最终软件源代码\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\bin\Debug\ATDC.exe
+C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\bin\Debug\ATDC.pdb
+C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
