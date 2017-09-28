@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!--前台代码，菜单栏-->
+    <system:String x:Key="LangsSubMenuConnect">Connect</system:String>
+    <system:String x:Key="LangsSubMenuFunctions">Functions</system:String>
+    <system:String x:Key="LangsSubMenuLanguage">Language</system:String>
+    <system:String x:Key="LangsSubMenuHelp">Help</system:String>
+    <system:String x:Key="LangsConnectSubMenuDevices">Devices</system:String>
+    <system:String x:Key="LangsFunctionsSubMenuManualTest">Manual Test</system:String>
+    <system:String x:Key="LangsFunctionsSubMenuAutoTest">Auto Test</system:String>
+    <system:String x:Key="LangsFunctionsSubMenuResetRotatingPlatform">Reset Rotating Platform</system:String>
+    <system:String x:Key="LangsFunctionsSubMenuUserCalibration">User Calibration（CL-500A）</system:String>
+    <system:String x:Key="LangsLanguageSubMenuChinese">中文</system:String>
+    <system:String x:Key="LangsLanguageSubMenuEnglish">English</system:String>
+    <system:String x:Key="LangsHelpSubMenuAbout">About</system:String>
+    
+</ResourceDictionary>
