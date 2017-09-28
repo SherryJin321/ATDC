@@ -328,3 +328,14 @@ C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改�
 C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.Form1.resources
 C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.Properties.Resources.resources
 C:\Users\JXY\Source\Repos\ATDC\调光曲线手动&自动测试_1.2_AIRSAFE--改进版-增加EV值范围\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.exe
+C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.pdb
+C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\bin\Debug\ATDC.exe
+C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\bin\Debug\ATDC.pdb
+C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache

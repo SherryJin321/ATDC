@@ -97,7 +97,7 @@ namespace ATDC
 
                     label3.Text = "已保存数据：";
                     lab_countDown.Text = i_add.ToString() + "/41";
-                    d_current = 2.7;
+                    d_current = 6.7;
                     txt_IOut.Text = d_current.ToString();
 
                     btn_AutoTest.Enabled = false;
@@ -294,12 +294,12 @@ namespace ATDC
             //显示当前电流值
             if (d_time == 1)
             {
-                d_current = 2.6;
+                d_current = 6.8;
                 txt_IOut.Text = d_current.ToString("0.0");                    //当计时为1s，电流赋值为2.6,文本框显示当前电流值                        
             }
             if ((d_time - 21) >= 0 && (d_time - (i_sumtime - i_timeinterview)) <= 0 && (d_time - 21) % i_timeinterview == 0)
             {
-                d_current += 0.1;                                             //从21s开始，每隔4/5/6/7/8s，电流值自加0.1
+                d_current -= 0.1;                                             //从21s开始，每隔4/5/6/7/8s，电流值自加0.1
                 txt_IOut.Text = d_current.ToString("0.0");                    //文本框显示当前电流值                   
             }
             db_current[i_add++] = d_current;                                  //电流值写入电流数组
@@ -892,7 +892,7 @@ namespace ATDC
                         db_lightintensity[i_add] = Convert.ToDouble(txt_EV.Text);
 
                     lab_countDown.Text = (++i_add).ToString() + "/41";
-                    d_current += 0.1;
+                    d_current -= 0.1;
                     txt_IOut.Text = d_current.ToString("0.0");
                         btn_SaveDate.Enabled = false;
                         timer3.Enabled = true;
