@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DynamicDataDisplay">
+      <HintPath>..\..\..\..\..\Desktop\DynamicDataDisplay\X86\0.3.0.0\DynamicDataDisplay.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -55,23 +58,94 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AutoTest.xaml.cs">
+      <DependentUpon>AutoTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DimmingCurveDataAnalysis.xaml.cs">
+      <DependentUpon>DimmingCurveDataAnalysis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateCurve.xaml.cs">
+      <DependentUpon>GenerateCurve.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManualTest.xaml.cs">
+      <DependentUpon>ManualTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ResetRotatingPlatform.xaml.cs">
+      <DependentUpon>ResetRotatingPlatform.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZeroCalibration.xaml.cs">
+      <DependentUpon>ZeroCalibration.xaml</DependentUpon>
+    </Compile>
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AutoTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChineseSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Devices.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DimmingCurveDataAnalysis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EnglishSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GenerateCurve.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ChineseSetting.xaml.cs">
+      <DependentUpon>ChineseSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Devices.xaml.cs">
+      <DependentUpon>Devices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EnglishSetting.xaml.cs">
+      <DependentUpon>EnglishSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LanguageHelper.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ManualTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResetRotatingPlatform.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\Langs\en-US.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Resources\Langs\zh-CN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ZeroCalibration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -103,7 +177,21 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\ATDC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ATDC Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Airsafe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Airsafe1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Enquiry.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

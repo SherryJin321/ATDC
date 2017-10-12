@@ -1,0 +1,58 @@
+﻿<Window x:Class="ATDC_V2._0.Devices"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATDC_V2._0"
+        mc:Ignorable="d"
+        Title="{DynamicResource LangsDevicesPage}" Height="500" Width="850" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="3"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="3"/>
+            <RowDefinition />
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="{DynamicResource LangsSensor}" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontWeight="Bold"/>
+        <Label Grid.Row="0" Content="{DynamicResource LangsSensorModel}" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
+        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Width="330" Height="40" Margin="210,45,0,0" Background="{x:Null}" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <ComboBox x:Name="SensorModelSelect" Width="326" Height="36" BorderThickness="0" FontSize="16" MaxDropDownHeight="100" HorizontalAlignment="Left" Padding="10,8,0,0" SelectedIndex="0">
+                <ComboBoxItem Content="{DynamicResource LangsCL500A}"></ComboBoxItem>
+                <ComboBoxItem Content="{DynamicResource LangsCL200ACL200}"></ComboBoxItem>
+            </ComboBox>
+        </Border>
+        <Label Grid.Row="2" Content="{DynamicResource LangsRotatingPlatform}" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontWeight="Bold"/>
+        <Label Grid.Row="2" Content="{DynamicResource LangsRotatingPlatformPort}" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
+        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Width="330" Height="40" Margin="210,45,0,0" Background="{x:Null}" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <ComboBox x:Name="RotatingPlatformPortSelect" Width="326" Height="36" BorderThickness="0" FontSize="16" MaxDropDownHeight="100" HorizontalAlignment="Left" Padding="10,8,0,0" DropDownOpened="RotatingPlatformPortSelect_DropDownOpened" >
+            </ComboBox>
+        </Border>
+        <Label Grid.Row="4" Content="{DynamicResource LangsMiniCCR}" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontWeight="Bold"/>
+        <Label Grid.Row="4" Content="{DynamicResource LangsMiniCCRModel}" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
+        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Width="330" Height="40" Margin="210,45,0,0" Background="{x:Null}" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <ComboBox x:Name="MiniCCRModelSelect" Width="326" Height="36" BorderThickness="0" FontSize="16" MaxDropDownHeight="100" HorizontalAlignment="Left" Padding="10,8,0,0" SelectedIndex="0">
+                <ComboBoxItem Content="{DynamicResource LangsMiniCCRWithoutCommunicationInterface}"></ComboBoxItem>
+                <ComboBoxItem Content="{DynamicResource LangsMiniCCRWithCommunicationInterface}"></ComboBoxItem>
+            </ComboBox>
+        </Border>
+        <Label Grid.Row="4" Content="{DynamicResource LangsMiniCCRPort}" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,100,0,0"/>
+        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Width="330" Height="40" Margin="210,100,0,0" Background="{x:Null}" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <ComboBox x:Name="MiniCCRPortSelect" Width="326" Height="36" BorderThickness="0" FontSize="16" MaxDropDownHeight="100" HorizontalAlignment="Left" Padding="10,8,0,0" DropDownOpened="MiniCCRPortSelect_DropDownOpened"  >
+            </ComboBox>
+        </Border>
+        <Border BorderBrush="Gray" BorderThickness="3" Grid.Row="1"/>
+        <Border BorderBrush="Gray" BorderThickness="3" Grid.Row="3"/>
+        <Border Grid.Row="5" Width="130" Height="40" Margin="10,0.25,0,0" HorizontalAlignment="Left" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
+            <Button x:Name="ConnectDevicesPage" Content="{DynamicResource LangsConnectDevicesPage}" Width="130" Height="40" Background="{x:Null}" BorderThickness="0" FontSize="16"/>
+        </Border>
+        <Border Grid.Row="5" Width="130" Height="40" Margin="0,0.25,10,0" HorizontalAlignment="Right" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
+            <Button x:Name="CloseDevicesPage" Content="{DynamicResource LangsCloseDevicesPage}" Width="130" Height="40" Background="{x:Null}" BorderThickness="0" FontSize="16" Click="CloseDevicesPage_Click"/>
+        </Border>
+        <Label Grid.Row="0" Content="{DynamicResource LangsConnectStatus}" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Margin="570,10,0,0"/>
+        <Label Grid.Row="0" Content="{DynamicResource LangsConnectStatusSensor}" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="570,50,0,0" x:Name="ConnectStatusSensor"/>
+        <Label Grid.Row="2" Content="{DynamicResource LangsConnectStatusRotatingPlatform}" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="570,50,0,0" x:Name="ConnectStatusRotatingPlatform"/>
+        <Label Grid.Row="4" Content="{DynamicResource LangsConnectStatusMiniCCR}" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="570,100,0,0" x:Name="ConnectStatusMiniCCR"/>
+    </Grid>
+</Window>

@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ATDC_V2._0"
         mc:Ignorable="d"
-        Title="ATDC" Height="700" Width="1200">
+        Title="ATDC" Height="600" Width="1000" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="519*"/>
+            <ColumnDefinition Width="475*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition Height="3"/>
@@ -15,39 +19,24 @@
 
         <Menu x:Name="MainMenu" Height="40" VerticalAlignment="Top" Background="White" FontSize="18" Margin="10,0,0,0" Padding="8,8,0,0" HorizontalAlignment="Left" Grid.Row="0">
             <MenuItem x:Name="SubMenuConnect" Header="{DynamicResource LangsSubMenuConnect}" Padding="15,4,15,4">
-                <MenuItem x:Name="ConnectSubMenuDevices" Header="{DynamicResource LangsConnectSubMenuDevices}" Background="White" Padding="0,4,0,4">
-
-                </MenuItem>
+                <MenuItem x:Name="ConnectSubMenuDevices" Header="{DynamicResource LangsConnectSubMenuDevices}" Background="White" Padding="0,4,0,4" Click="ConnectSubMenuDevices_Click" />
             </MenuItem>
             <MenuItem x:Name="SubMenuFunctions" Header="{DynamicResource LangsSubMenuFunctions}" Padding="15,4,15,4">
-                <MenuItem x:Name="FunctionsSubMenuManualTest" Header="{DynamicResource LangsFunctionsSubMenuManualTest}" Background="White" Padding="0,4,0,4">
-                
-                </MenuItem>
-                <MenuItem x:Name="FunctionsSubMenuAutoTest" Header="{DynamicResource LangsFunctionsSubMenuAutoTest}" Background="White" Padding="0,4,0,4">
-                
-                </MenuItem>
-                <MenuItem x:Name="FunctionsSubMenuResetRotatingPlatform" Header="{DynamicResource LangsFunctionsSubMenuResetRotatingPlatform}" Background="White" Padding="0,4,0,4">
-
-                </MenuItem>
-                <MenuItem x:Name="FunctionsSubMenuUserCalibration" Header="{DynamicResource LangsFunctionsSubMenuUserCalibration}" Background="White" Padding="0,4,0,4">
-
-                </MenuItem>
+                <MenuItem x:Name="FunctionsSubMenuManualTest" Header="{DynamicResource LangsFunctionsSubMenuManualTest}" Background="White" Padding="0,4,0,4" Click="FunctionsSubMenuManualTest_Click" />
+                <MenuItem x:Name="FunctionsSubMenuAutoTest" Header="{DynamicResource LangsFunctionsSubMenuAutoTest}" Background="White" Padding="0,4,0,4" Click="FunctionsSubMenuAutoTest_Click" />
+                <MenuItem x:Name="FunctionsSubMenuSetRotatingPlatform" Header="{DynamicResource LangsFunctionsSubMenuSetRotatingPlatform}" Background="White" Padding="0,4,0,4" Click="FunctionsSubMenuSetRotatingPlatform_Click"/>
+                <MenuItem x:Name="FunctionsSubMenuZeroCalibration" Header="{DynamicResource LangsFunctionsSubMenuZeroCalibration}" Background="White" Padding="0,4,0,4" Click="FunctionsSubMenuZeroCalibration_Click"/>
             </MenuItem>
             <MenuItem x:Name="SubMenuLanguage" Header="{DynamicResource LangsSubMenuLanguage}" Padding="15,4,15,4">
-                <MenuItem x:Name="LanguageSubMenuChinese" Header="{DynamicResource LangsLanguageSubMenuChinese}" Background="White" Padding="0,4,0,4">
-
-                </MenuItem>
-                <MenuItem x:Name="LanguageSubMenuEnglish" Header="{DynamicResource LangsLanguageSubMenuEnglish}" Background="White" Padding="0,4,0,4">
-
-                </MenuItem>
+                <MenuItem x:Name="LanguageSubMenuChinese" Header="{DynamicResource LangsLanguageSubMenuChinese}" Background="White" Padding="0,4,0,4" Click="LanguageSubMenuChinese_Click" />
+                <MenuItem x:Name="LanguageSubMenuEnglish" Header="{DynamicResource LangsLanguageSubMenuEnglish}" Background="White" Padding="0,4,0,4" Click="LanguageSubMenuEnglish_Click"/>
             </MenuItem>
             <MenuItem x:Name="SubMenuHelp" Header="{DynamicResource LangsSubMenuHelp}" Padding="15,4,15,4">
-                <MenuItem x:Name="HelpSubMenuAbout" Header="{DynamicResource LangsHelpSubMenuAbout}" Background="White" Padding="0,4,0,4">
-
-                </MenuItem>
+                <MenuItem x:Name="HelpSubMenuAbout" Header="{DynamicResource LangsHelpSubMenuAbout}" Background="White" Padding="0,4,0,4" Click="HelpSubMenuAbout_Click"/>
             </MenuItem>
         </Menu>
-        <Border BorderBrush="Gray" BorderThickness="3" Grid.Row="1"/>
+        <Border BorderBrush="Gray" BorderThickness="3" Grid.Row="1" Grid.ColumnSpan="2"/>
 
+        <Frame x:Name="SwitchPage" NavigationUIVisibility="Hidden" Grid.Row="2" Grid.ColumnSpan="2"></Frame>
     </Grid>
 </Window>

@@ -1,0 +1,48 @@
+﻿<Page x:Class="ATDC_V2._0.AutoTest"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ATDC_V2._0"
+      mc:Ignorable="d" 
+      d:DesignHeight="557" d:DesignWidth="1000"
+      Title="AutoTest">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Label Content="{DynamicResource LangsAutoTestTitle}" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="0" FontSize="18" FontWeight="Bold" Margin="20,0,0,0"/>
+        <Border Grid.Row="1" Width="3" Height="367" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" BorderBrush="Gray" BorderThickness="2"/>
+        <Label Content="{DynamicResource LangsAutoTestOperation}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="16" FontWeight="Bold"/>
+        <Label Content="{DynamicResource LangsAutoTestDevicesType}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,0,0,0" FontSize="16" FontWeight="Bold"/>
+        <Label Content="{DynamicResource LangsAutoTestSensorModel}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,50,0,0" FontSize="16" Height="30"/>
+        <Border Grid.Row="1" Width="150" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,75,0,0" BorderBrush="Gray" BorderThickness="1"/>
+        <TextBlock x:Name="AutoTestSensorModelDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,50,0,0" Padding="6,6,0,0" FontSize="16"/>
+        <Label Content="{DynamicResource LangsAutoTestCCRModel}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,100,0,0" FontSize="16"/>
+        <Border Grid.Row="1" Width="310" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,125,0,0" BorderBrush="Gray" BorderThickness="1"/>
+        <TextBlock x:Name="AutoTestCCRModelDisplay" Grid.Row="1" Width="310" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,100,0,0" Padding="6,6,0,0" FontSize="16"/>
+        <Border Grid.Row="1" Width="450" Height="3" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,160,20,0" BorderBrush="Gray" BorderThickness="3"/>
+        <Label Content="{DynamicResource LangsAutoTestParameterDisplay}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,190,0,0" FontSize="16" FontWeight="Bold"/>
+        <Label Content="{DynamicResource LangsAutoTestTimeCount}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,240,0,0" FontSize="16"/>
+        <Border Grid.Row="1" Width="150" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,265,0,0" BorderBrush="Gray" BorderThickness="1"/>
+        <TextBlock x:Name="AutoTestCountDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,240,0,0" Padding="6,6,0,0" FontSize="16"/>
+        <Label Content="{DynamicResource LangsAutoTestCurrentValue}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,290,0,0" FontSize="16"/>
+        <Border Grid.Row="1" Width="150" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,315,0,0" BorderBrush="Gray" BorderThickness="1"/>
+        <TextBlock x:Name="AutoTestCurrentValueDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,290,0,0" Padding="6,6,0,0" FontSize="16"/>
+        <Label Content="{DynamicResource LangsAutoTestEVValue}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,340,0,0" FontSize="16"/>
+        <Border Grid.Row="1" Width="150" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,365,0,0" BorderBrush="Gray" BorderThickness="1"/>
+        <TextBlock x:Name="AutoTestEVValueDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,340,0,0" Padding="6,6,0,0" FontSize="16"/>
+        <Border Grid.Row="5" Width="180" Height="60" Margin="150,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
+            <Button x:Name="AutoTestStart" Content="{DynamicResource LangsAutoTestStart}" Width="180" Height="60" Background="{x:Null}" BorderThickness="0" FontSize="22"/>
+        </Border>
+        <Border Grid.Row="5" Width="180" Height="60" Margin="150,160,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
+            <Button x:Name="AutoTestStop" Content="{DynamicResource LangsAutoTestStop}" Width="180" Height="60" Background="{x:Null}" BorderThickness="0" FontSize="22"/>
+        </Border>
+        <Border Grid.Row="5" Width="180" Height="60" Margin="150,260,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
+            <Button x:Name="AutoTestGenerateCurve" Content="{DynamicResource LangsAutoTestGenerateCurve}" Width="180" Height="60" Background="{x:Null}" BorderThickness="0" FontSize="22" Click="AutoTestGenerateCurve_Click" />
+        </Border>
+    </Grid>
+</Page>

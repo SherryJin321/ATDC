@@ -10,10 +10,125 @@
     <system:String x:Key="LangsConnectSubMenuDevices">Devices</system:String>
     <system:String x:Key="LangsFunctionsSubMenuManualTest">Manual Test</system:String>
     <system:String x:Key="LangsFunctionsSubMenuAutoTest">Auto Test</system:String>
-    <system:String x:Key="LangsFunctionsSubMenuResetRotatingPlatform">Reset Rotating Platform</system:String>
-    <system:String x:Key="LangsFunctionsSubMenuUserCalibration">User Calibration（CL-500A）</system:String>
+    <system:String x:Key="LangsFunctionsSubMenuSetRotatingPlatform">Set Rotating Platform</system:String>
+    <system:String x:Key="LangsFunctionsSubMenuZeroCalibration">Zero Calibration（CL-500A）</system:String>
     <system:String x:Key="LangsLanguageSubMenuChinese">中文</system:String>
     <system:String x:Key="LangsLanguageSubMenuEnglish">English</system:String>
     <system:String x:Key="LangsHelpSubMenuAbout">About</system:String>
+
+    <!--前台代码，About页面-->
+    <system:String x:Key="LangsSoftwareVersion">Version 2.0</system:String>
+    <system:String x:Key="LangsCloseAboutPage">Close</system:String>
+    <system:String x:Key="LangsAboutPage">About</system:String>
+
+    <!--前台代码，Chinese页面-->
+    <system:String x:Key="LangsChineseLanguageSettingPage">语言设置</system:String>
+    <system:String x:Key="LangsChineseSettingConfirm">确认</system:String>
+    <system:String x:Key="LangsChineseSettingCancel">取消</system:String>
+    <system:String x:Key="LangsChineseSettingEnquiry">是否将语言设置成中文？</system:String>
+
+    <!--前台代码，English页面-->
+    <system:String x:Key="LangsEnglishLanguageSettingPage">Language Setting</system:String>
+    <system:String x:Key="LangsEnglishSettingConfirm">Confirm</system:String>
+    <system:String x:Key="LangsEnglishSettingCancel">Cancel</system:String>
+    <system:String x:Key="LangsEnglishSettingEnquiry">Are you sure to set the language to English?</system:String>
+
+    <!--前台代码，Devices页面-->
+    <system:String x:Key="LangsDevicesPage">Devices</system:String>
+    <system:String x:Key="LangsConnectDevicesPage">Connect</system:String>
+    <system:String x:Key="LangsCloseDevicesPage">Close</system:String>
+    <system:String x:Key="LangsSensor">Sensor</system:String>
+    <system:String x:Key="LangsSensorModel">Sensor Type :</system:String>
+    <system:String x:Key="LangsCL500A">CL-500A</system:String>
+    <system:String x:Key="LangsCL200ACL200">CL-200A/CL-200</system:String>
+    <system:String x:Key="LangsRotatingPlatform">Rotating Platform</system:String>
+    <system:String x:Key="LangsRotatingPlatformPort">Rotating Platform Port :</system:String>
+    <system:String x:Key="LangsMiniCCR">Mini CCR</system:String>
+    <system:String x:Key="LangsMiniCCRModel">CCR Type :</system:String>
+    <system:String x:Key="LangsMiniCCRPort">CCR Port :</system:String>
+    <system:String x:Key="LangsMiniCCRWithoutCommunicationInterface">CCR Without Communication Interface</system:String>
+    <system:String x:Key="LangsMiniCCRWithCommunicationInterface">CCR With Communication Interface</system:String>
+    <system:String x:Key="LangsConnectStatus">Connection Status</system:String>
+    <system:String x:Key="LangsConnectStatusSensor">Not connected yet.</system:String>
+    <system:String x:Key="LangsConnectStatusRotatingPlatform">Not connected yet.</system:String>
+    <system:String x:Key="LangsConnectStatusMiniCCR">Not connected yet.</system:String>
+
+    <!--前台代码，Zero Calibration 页面-->
+    <system:String x:Key="LangsZeroCalibrationPage">Zero Calibration（CL-500A）</system:String>
+    <system:String x:Key="LangsZeroCalibrationDo">Calibrate</system:String>
+    <system:String x:Key="LangsZeroCalibrationClose">Close</system:String>
+    <system:String x:Key="LangsZeroCalibrationNotes">Note:</system:String>
+    <system:String x:Key="LangsZeroCalibrationNotesContent">Please make sure that the cover is properly seated on the light sensitive window, before doing the zero calibration of the CL-500A.</system:String>
+    <system:String x:Key="LangsZeroCalibrationStatus">Status Display:</system:String>
+    <system:String x:Key="LangsZeroCalibrationStatusContent">Not done zero calibration yet.</system:String>
+
+    <!--前台代码，Reset Rotating Platform 页面-->
+    <system:String x:Key="LangsSetRotatingPlatformPage">Set Rotating Platform</system:String>
+    <system:String x:Key="LangsSetRotatingPlatformDo">Reset</system:String>
+    <system:String x:Key="LangsSetRotatingPlatformClose">Close</system:String>
+    <system:String x:Key="LangsSetRotatingPlatformMotorControl">Motor Control</system:String>
+    <system:String x:Key="LangsSetRotatingPlatformUp">Up</system:String>
+    <system:String x:Key="LangsSetRotatingPlatformLeft">Left</system:String>
+    <system:String x:Key="LangsSetRotatingPlatformRight">Right</system:String>
+    <system:String x:Key="LangsSetRotatingPlatformDown">Down</system:String>
+    <system:String x:Key="LangsSetRotatingPlatformGetMotorLocation">Get Location</system:String>
+
+    <!--前台代码，手动测试 页面-->
+    <system:String x:Key="LangsManualTestTitle">Manual Test</system:String>
+    <system:String x:Key="LangsManualTestOperation">Button Operation</system:String>
+    <system:String x:Key="LangsManualTestDevicesType">Devices Type</system:String>
+    <system:String x:Key="LangsManualTestSensorModel">Sensor Type:</system:String>
+    <system:String x:Key="LangsManualTestCCRModel">Mini CCR Type:</system:String>
+    <system:String x:Key="LangsManualTestParameterDisplay">Parameter Display</system:String>
+    <system:String x:Key="LangsManualTestCount">Count:</system:String>
+    <system:String x:Key="LangsManualTestCurrentValue">Current Value(A):</system:String>
+    <system:String x:Key="LangsManualTestEVValue">EV Value(lx):</system:String>
+    <system:String x:Key="LangsManualTestStart">Start Test</system:String>
+    <system:String x:Key="LangsManualTestSaveData">Save Data</system:String>
+    <system:String x:Key="LangsManualTestGenerateCurve">Generate Curve</system:String>
+
+
+    <!--前台代码，自动测试 页面-->
+    <system:String x:Key="LangsAutoTestTitle">Auto Test</system:String>
+    <system:String x:Key="LangsAutoTestOperation">Button Operation</system:String>
+    <system:String x:Key="LangsAutoTestDevicesType">Devices Type</system:String>
+    <system:String x:Key="LangsAutoTestSensorModel">Sensor Type:</system:String>
+    <system:String x:Key="LangsAutoTestCCRModel">Mini CCR Type:</system:String>
+    <system:String x:Key="LangsAutoTestParameterDisplay">Parameter Display</system:String>
+    <system:String x:Key="LangsAutoTestTimeCount">Count Down:</system:String>
+    <system:String x:Key="LangsAutoTestCurrentValue">Current Value(A):</system:String>
+    <system:String x:Key="LangsAutoTestEVValue">EV Value(lx):</system:String>
+    <system:String x:Key="LangsAutoTestStart">Start Test</system:String>
+    <system:String x:Key="LangsAutoTestStop">Stop Test</system:String>
+    <system:String x:Key="LangsAutoTestGenerateCurve">Generate Curve</system:String>
+
+    <!--前台代码，生成曲线 页面-->
+    <system:String x:Key="LangsGenerateCurvePage">Dimming Curve</system:String>
+    <system:String x:Key="LangsGenerateCurveLampColorSelectionNote">Lamp Color:</system:String>
+    <system:String x:Key="LangsWhite">White</system:String>
+    <system:String x:Key="LangsBlue">Blue</system:String>
+    <system:String x:Key="LangsRed">Red</system:String>
+    <system:String x:Key="LangsGreen">Green</system:String>
+    <system:String x:Key="LangsYellow">Yellow</system:String>
+    <system:String x:Key="LangsGenerateCurveLampColorSelectConfirm">Confirm</system:String>
+    <system:String x:Key="LangsDimmingCurveChart">Dimming Curve Chart</system:String>
+    <system:String x:Key="LangsVerticalAxisTitle">Percentage（%）</system:String>
+    <system:String x:Key="LangsHorizontalAxisTitle">Current Value（A）</system:String>
+    <system:String x:Key="LangsGenerateCurveTemplate">Dimming Curve Template</system:String>
+    <system:String x:Key="LangsGenerateCurveDraw">Dimming Curve Draw</system:String>
+    <system:String x:Key="LangsGenerateCurveDrawCurve">Draw Curve</system:String>
+    <system:String x:Key="LangsGenerateCurveExportCurve">Export Data</system:String>
+    <system:String x:Key="LangsGenerateCurveResult">Dimming curve is fit or not:</system:String>
+    <system:String x:Key="LangsGenerateCurveCheckDetailResult">View Data</system:String>
+
+    <!--前台代码，调光曲线数据分析 页面-->
+    <system:String x:Key="LangsDimmingCurveDataAnalysisPage">Data Analysis</system:String>
+    <system:String x:Key="LangsTableColumnCurrentValue">Current（A）</system:String>
+    <system:String x:Key="LangsTableColumnEVValue">EV（lx）</system:String>
+    <system:String x:Key="LangsTableColumnPercentage">Percentage(%)</system:String>
+    <system:String x:Key="LangsTableColumnMaxValue">Max Percen(%)</system:String>
+    <system:String x:Key="LangsTableColumnMinValue">Min Percen(%)</system:String>
+    <system:String x:Key="LangsTableColumnIsFit">Is Fit（Y/N）</system:String>
+    <system:String x:Key="LangsDimmingCurveDataAnalysisTitle">Dimming Curve Table</system:String>
     
 </ResourceDictionary>
