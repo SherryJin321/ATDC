@@ -22,13 +22,13 @@
     <system:String x:Key="LangsAboutPage">About</system:String>
 
     <!--前台代码，Chinese页面-->
-    <system:String x:Key="LangsChineseLanguageSettingPage">语言设置</system:String>
+    <system:String x:Key="LangsChineseLanguageSettingPage">中文</system:String>
     <system:String x:Key="LangsChineseSettingConfirm">确认</system:String>
     <system:String x:Key="LangsChineseSettingCancel">取消</system:String>
     <system:String x:Key="LangsChineseSettingEnquiry">是否将语言设置成中文？</system:String>
 
     <!--前台代码，English页面-->
-    <system:String x:Key="LangsEnglishLanguageSettingPage">Language Setting</system:String>
+    <system:String x:Key="LangsEnglishLanguageSettingPage">English</system:String>
     <system:String x:Key="LangsEnglishSettingConfirm">Confirm</system:String>
     <system:String x:Key="LangsEnglishSettingCancel">Cancel</system:String>
     <system:String x:Key="LangsEnglishSettingEnquiry">Are you sure to set the language to English?</system:String>
@@ -81,11 +81,11 @@
     <system:String x:Key="LangsManualTestCCRModel">Mini CCR Type:</system:String>
     <system:String x:Key="LangsManualTestParameterDisplay">Parameter Display</system:String>
     <system:String x:Key="LangsManualTestCount">Count:</system:String>
-    <system:String x:Key="LangsManualTestCurrentValue">Current Value(A):</system:String>
-    <system:String x:Key="LangsManualTestEVValue">EV Value(lx):</system:String>
+    <system:String x:Key="LangsManualTestCurrentValue">Current (A):</system:String>
+    <system:String x:Key="LangsManualTestEVValue">EV (lx):</system:String>
     <system:String x:Key="LangsManualTestStart">Start Test</system:String>
     <system:String x:Key="LangsManualTestSaveData">Save Data</system:String>
-    <system:String x:Key="LangsManualTestGenerateCurve">Generate Curve</system:String>
+    <system:String x:Key="LangsManualTestGenerateCurve">Dimming Curve</system:String>
 
 
     <!--前台代码，自动测试 页面-->
@@ -96,13 +96,12 @@
     <system:String x:Key="LangsAutoTestCCRModel">Mini CCR Type:</system:String>
     <system:String x:Key="LangsAutoTestParameterDisplay">Parameter Display</system:String>
     <system:String x:Key="LangsAutoTestTimeCount">Count Down:</system:String>
-    <system:String x:Key="LangsAutoTestCurrentValue">Current Value(A):</system:String>
-    <system:String x:Key="LangsAutoTestEVValue">EV Value(lx):</system:String>
+    <system:String x:Key="LangsAutoTestCurrentValue">Current (A):</system:String>
+    <system:String x:Key="LangsAutoTestEVValue">EV (lx):</system:String>
     <system:String x:Key="LangsAutoTestStart">Start Test</system:String>
-    <system:String x:Key="LangsAutoTestStop">Stop Test</system:String>
-    <system:String x:Key="LangsAutoTestGenerateCurve">Generate Curve</system:String>
+    <system:String x:Key="LangsAutoTestGenerateCurve">Dimming Curve</system:String>
 
-    <!--前台代码，生成曲线 页面-->
+    <!--前台代码，调光曲线 页面-->
     <system:String x:Key="LangsGenerateCurvePage">Dimming Curve</system:String>
     <system:String x:Key="LangsGenerateCurveLampColorSelectionNote">Lamp Color:</system:String>
     <system:String x:Key="LangsWhite">White</system:String>
@@ -119,7 +118,7 @@
     <system:String x:Key="LangsGenerateCurveDrawCurve">Draw Curve</system:String>
     <system:String x:Key="LangsGenerateCurveExportCurve">Export Data</system:String>
     <system:String x:Key="LangsGenerateCurveResult">Dimming curve is fit or not:</system:String>
-    <system:String x:Key="LangsGenerateCurveCheckDetailResult">View Data</system:String>
+    <system:String x:Key="LangsGenerateCurveCheckDetailResult">Data Analysis</system:String>
 
     <!--前台代码，调光曲线数据分析 页面-->
     <system:String x:Key="LangsDimmingCurveDataAnalysisPage">Data Analysis</system:String>

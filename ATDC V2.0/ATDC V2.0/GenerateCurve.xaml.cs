@@ -23,6 +23,7 @@ namespace ATDC_V2._0
     public partial class GenerateCurve : Window
     {
 
+#region 绘制调光曲线模板参数
         private ObservableDataSource<Point> DataSourceWhiteLightMinimum = new ObservableDataSource<Point>();
         private ObservableDataSource<Point> DataSourceWhiteLightMaximum = new ObservableDataSource<Point>();
         private ObservableDataSource<Point> DataSourceNotWhiteLightMinimum = new ObservableDataSource<Point>();
@@ -38,6 +39,12 @@ namespace ATDC_V2._0
         double[] DataWhiteLightMaximum = new double[41] { 0.7, 0.7, 0.92, 1.14, 1.35, 1.57, 1.78, 2.1, 2.75, 3.5, 4.25, 5, 5.75, 6.5, 7.35, 8.45, 9.76, 11.23, 12.89, 14.75, 16.83, 19.15, 21.73, 24.59, 27.76, 31.27, 35.15, 39.41, 44.11, 49.26, 54.9, 61.08, 67.83, 75.19, 83.21, 91.93, 100, 100, 100, 100, 100 };
         double[] DataNotWhiteLightMinimum = new double[41] { 0.13, 0.15, 0.33, 0.5, 0.68, 0.85, 1.03, 1.2, 1.57, 1.93, 2.3, 2.9, 3.55, 4.28, 5, 5.71, 6.43, 7.14, 7.86, 8.57, 9.29, 10, 11.25, 12.5, 14, 16.8, 21.2, 25.6, 30, 33, 36, 39, 42, 45, 48, 53, 62, 74.67, 87.33, 100, 100 };
         double[] DataNotWhiteLightMaximum = new double[41] { 1.6, 1.65, 1.8, 2.01, 2.23, 2.44, 2.65, 3, 3.7, 4.75, 5.8, 6.85, 7.9, 8.95, 10, 11.17, 12.33, 13.5, 14.67, 15.83, 17, 19, 24, 31.5, 36, 39.75, 43.5, 47.25, 51, 56, 62.29, 68.57, 74.86, 81.14, 87.43, 93.71, 100, 100, 100, 100, 100 };
+#endregion
+
+        public double[] GenerateCurveEVValue { get; set;}
+       
+
+
 
         public GenerateCurve()
         {
@@ -48,6 +55,14 @@ namespace ATDC_V2._0
         {                      
             DataSourceWhiteLightMinimumFunction();
             DataSourceWhiteLightMaximumFunction();
+
+
+            GenerateCurveEVValue = new double[41];
+            for (int i = 0; i < 41; i++)
+            {
+                GenerateCurveEVValue[i] = i + 4;
+               
+            }
         }
         
         //选择灯具颜色
@@ -125,10 +140,18 @@ namespace ATDC_V2._0
         }
         #endregion
 
-        #region 打开 数据分析 页面
+        #region 打开 数据分析 页面，并传递灯具颜色参数、测得的EV值参数
         private void GenerateCurveCheckDetailResult_Click(object sender, RoutedEventArgs e)
-        {
+        {            
             DimmingCurveDataAnalysis DimmingCurveDataAnalysisWindow = new DimmingCurveDataAnalysis();
+            DimmingCurveDataAnalysisWindow.GenerateCurveLampColorSelectdIndex = GenerateCurveLampColorSelect.SelectedIndex;
+            
+            DimmingCurveDataAnalysisWindow.EVValue = new double[41];
+            for (int i = 0; i < 41; i++)
+            {
+                DimmingCurveDataAnalysisWindow.EVValue[i] = GenerateCurveEVValue[i];
+            }
+
             DimmingCurveDataAnalysisWindow.ShowDialog();
         }
         #endregion

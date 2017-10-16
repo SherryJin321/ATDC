@@ -24,5 +24,14 @@ namespace ATDC_V2._0
         {
             InitializeComponent();
         }
+
+
+#region 进入 调光曲线 页面
+        private void ManualTestGenerateCurve_Click(object sender, RoutedEventArgs e)
+        {
+            GenerateCurve GenerateCurveWindow = new GenerateCurve();
+            GenerateCurveWindow.ShowDialog();
+        }
+#endregion
     }
 }

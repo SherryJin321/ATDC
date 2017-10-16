@@ -36,7 +36,7 @@
             <Button x:Name="ResetRotatingPlatformGetMotorLocation" Content="{DynamicResource LangsSetRotatingPlatformGetMotorLocation}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}"/>
         </Border>
         <TextBlock Text="(X,Y)=" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="170,0,0,73" Height="40" Padding="8,15,0,0"/>
-        <TextBox x:Name="ResetRotatingPlatformMotorLocationContent" Text="( 320 , 320 )" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" Padding="8,15,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="230,0,0,73"/>
+        <TextBox x:Name="ResetRotatingPlatformMotorLocationContent" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" Padding="8,15,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="230,0,0,73"/>
         <Border Grid.Row="0" Width="180" Height="2" Margin="170,0,0,73" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderBrush="Gray" BorderThickness="1"/>
 
 
