@@ -110,12 +110,10 @@
     <system:String x:Key="LangsGreen">Green</system:String>
     <system:String x:Key="LangsYellow">Yellow</system:String>
     <system:String x:Key="LangsGenerateCurveLampColorSelectConfirm">Confirm</system:String>
-    <system:String x:Key="LangsDimmingCurveChart">Dimming Curve Chart</system:String>
     <system:String x:Key="LangsVerticalAxisTitle">Percentage（%）</system:String>
-    <system:String x:Key="LangsHorizontalAxisTitle">Current Value（A）</system:String>
+    <system:String x:Key="LangsHorizontalAxisTitle">Current（A）</system:String>
     <system:String x:Key="LangsGenerateCurveTemplate">Dimming Curve Template</system:String>
-    <system:String x:Key="LangsGenerateCurveDraw">Dimming Curve Draw</system:String>
-    <system:String x:Key="LangsGenerateCurveDrawCurve">Draw Curve</system:String>
+    <system:String x:Key="LangsGenerateCurveDraw">Dimming Curve Analysis</system:String>
     <system:String x:Key="LangsGenerateCurveExportCurve">Export Data</system:String>
     <system:String x:Key="LangsGenerateCurveResult">Dimming curve is fit or not:</system:String>
     <system:String x:Key="LangsGenerateCurveCheckDetailResult">Data Analysis</system:String>
@@ -128,6 +126,18 @@
     <system:String x:Key="LangsTableColumnMaxValue">Max Percen(%)</system:String>
     <system:String x:Key="LangsTableColumnMinValue">Min Percen(%)</system:String>
     <system:String x:Key="LangsTableColumnIsFit">Is Fit（Y/N）</system:String>
-    <system:String x:Key="LangsDimmingCurveDataAnalysisTitle">Dimming Curve Table</system:String>
-    
+
+    <!--后台代码，调光曲线数据分析 页面-->
+    <system:String x:Key="LangsDimmingCurveDataAnalysisTitleWhite">Dimming Curve Table (White Light Only)</system:String>
+    <system:String x:Key="LangsDimmingCurveDataAnalysisTitleNotWhite">Dimming Curve Table (Colored Light Only)</system:String>
+
+    <!--后台代码，调光曲线 页面-->
+    <system:String x:Key="LangsDimmingCurveFinalResultFit">Fit</system:String>
+    <system:String x:Key="LangsDimmingCurveFinalResultNotFit">Unfit</system:String>
+    <system:String x:Key="LangsDimmingCurveLabelMax">Max Value</system:String>
+    <system:String x:Key="LangsDimmingCurveLabelMin">Min Value</system:String>
+    <system:String x:Key="LangsDimmingCurveLabelTestValue">Actual Value</system:String>
+    <system:String x:Key="LangsDimmingCurveChartHeaderWhite">Dimming Curve Chart (White Light Only)</system:String>
+    <system:String x:Key="LangsDimmingCurveChartHeaderNotWhite">Dimming Curve Chart (Colored Light Only)</system:String>
+
 </ResourceDictionary>

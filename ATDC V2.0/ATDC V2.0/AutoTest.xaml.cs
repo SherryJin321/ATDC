@@ -20,6 +20,8 @@ namespace ATDC_V2._0
     /// </summary>
     public partial class AutoTest : Page
     {
+        double[] EVValue = new double[41];
+
         public AutoTest()
         {
             InitializeComponent();
@@ -28,7 +30,18 @@ namespace ATDC_V2._0
         #region 进入 调光曲线 页面
         private void AutoTestGenerateCurve_Click(object sender, RoutedEventArgs e)
         {
+            for(int i=0;i<41;i++)
+            {
+                EVValue[i] = i+1;
+            }
+
             GenerateCurve GenerateCurveWindow = new GenerateCurve();
+            GenerateCurveWindow.EVValue = new double[41];
+            for (int i=0;i<41;i++)
+            {
+                GenerateCurveWindow.EVValue[i] = EVValue[i];
+            }
+
             GenerateCurveWindow.ShowDialog();
         }
         #endregion

@@ -111,12 +111,10 @@
     <system:String x:Key="LangsGreen">绿色</system:String>
     <system:String x:Key="LangsYellow">黄色</system:String>
     <system:String x:Key="LangsGenerateCurveLampColorSelectConfirm">确认</system:String>
-    <system:String x:Key="LangsDimmingCurveChart">调光曲线图</system:String>
     <system:String x:Key="LangsVerticalAxisTitle">百分比（%）</system:String>
-    <system:String x:Key="LangsHorizontalAxisTitle">电流值（A）</system:String>
+    <system:String x:Key="LangsHorizontalAxisTitle">电流（A）</system:String>
     <system:String x:Key="LangsGenerateCurveTemplate">调光曲线模板</system:String>
-    <system:String x:Key="LangsGenerateCurveDraw">调光曲线绘制</system:String>
-    <system:String x:Key="LangsGenerateCurveDrawCurve">绘制曲线</system:String>
+    <system:String x:Key="LangsGenerateCurveDraw">调光曲线分析</system:String>
     <system:String x:Key="LangsGenerateCurveExportCurve">导出数据</system:String>
     <system:String x:Key="LangsGenerateCurveResult">调光曲线是否符合：</system:String>
     <system:String x:Key="LangsGenerateCurveCheckDetailResult">数据分析</system:String>
@@ -129,7 +127,19 @@
     <system:String x:Key="LangsTableColumnMaxValue">最大百分比（%）</system:String>
     <system:String x:Key="LangsTableColumnMinValue">最小百分比（%）</system:String>
     <system:String x:Key="LangsTableColumnIsFit">是否符合（Y/N）</system:String>
-    <system:String x:Key="LangsDimmingCurveDataAnalysisTitle">调光曲线表</system:String>
+
+    <!--后台代码，调光曲线数据分析 页面-->
+    <system:String x:Key="LangsDimmingCurveDataAnalysisTitleWhite">调光曲线表（白色光）</system:String>
+    <system:String x:Key="LangsDimmingCurveDataAnalysisTitleNotWhite">调光曲线表（非白色光）</system:String>
+
+    <!--后台代码，调光曲线 页面-->
+    <system:String x:Key="LangsDimmingCurveFinalResultFit">符合</system:String>
+    <system:String x:Key="LangsDimmingCurveFinalResultNotFit">不符合</system:String>
+    <system:String x:Key="LangsDimmingCurveLabelMax">最大值</system:String>
+    <system:String x:Key="LangsDimmingCurveLabelMin">最小值</system:String>
+    <system:String x:Key="LangsDimmingCurveLabelTestValue">实际值</system:String>
+    <system:String x:Key="LangsDimmingCurveChartHeaderWhite">调光曲线图（白色光）</system:String>
+    <system:String x:Key="LangsDimmingCurveChartHeaderNotWhite">调光曲线图（非白色光）</system:String>
 
 
 </ResourceDictionary>
