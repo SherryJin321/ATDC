@@ -141,5 +141,8 @@
     <system:String x:Key="LangsDimmingCurveChartHeaderWhite">调光曲线图（白色光）</system:String>
     <system:String x:Key="LangsDimmingCurveChartHeaderNotWhite">调光曲线图（非白色光）</system:String>
 
+    <!--后台代码，设备 页面-->
+    <system:String x:Key="LangsDeviceConnectSuccess">连接成功</system:String>
+    <system:String x:Key="LangsDeviceConnectFailure">连接失败</system:String>
 
 </ResourceDictionary>

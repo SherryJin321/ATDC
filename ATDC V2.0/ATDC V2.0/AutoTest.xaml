@@ -13,7 +13,6 @@
             <RowDefinition Height="80" />
             <RowDefinition />
         </Grid.RowDefinitions>
-
         <Label Content="{DynamicResource LangsAutoTestTitle}" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="0" FontSize="18" FontWeight="Bold" Margin="20,0,0,0"/>
         <Border Grid.Row="1" Width="3" Height="367" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" BorderBrush="Gray" BorderThickness="2"/>
         <Label Content="{DynamicResource LangsAutoTestOperation}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="16" FontWeight="Bold"/>

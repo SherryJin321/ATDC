@@ -71,9 +71,11 @@
     <Compile Include="ManualTest.xaml.cs">
       <DependentUpon>ManualTest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MiniCCRWithoutCommunicationInterface.cs" />
     <Compile Include="ResetRotatingPlatform.xaml.cs">
       <DependentUpon>ResetRotatingPlatform.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RotatingPlatform.cs" />
     <Compile Include="ZeroCalibration.xaml.cs">
       <DependentUpon>ZeroCalibration.xaml</DependentUpon>
     </Compile>
