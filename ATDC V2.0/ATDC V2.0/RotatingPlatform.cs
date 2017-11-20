@@ -285,6 +285,75 @@ namespace ATDC_V2._0
         }
 
         /// <summary>
+        /// 解析反馈指令
+        /// </summary>
+        /// <param name="receivedData"></param>
+        /// <returns></returns>
+        public OperationStatusRotatingPlatform AnalysisFeedbackCommand(byte[] receivedData)
+        {
+            OperationStatusRotatingPlatform resultMessage = OperationStatusRotatingPlatform.OriginalStatus;
+
+            byte CHK = GetCHK(receivedData);
+            if(CHK==receivedData[receivedData.Length-1])
+            {
+                if(receivedData[2]==0x45)
+                {
+                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunction45Success;
+                }
+                else if(receivedData[2]==0x51)
+                {
+                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunction51Success;
+                }
+                else if(receivedData[2]==0xA1)
+                {
+                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunctionA1Success;
+                }
+                else if(receivedData[2]==0x40)
+                {
+                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunction40Success;
+                }
+                else if(receivedData[2]==0x42)
+                {
+                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunction42Success;
+                }
+                else if(receivedData[2]==0x34)
+                {
+                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunction34Success;
+                }
+                else if(receivedData[2]==0xA3)
+                {
+                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunctionA3Success;
+                }
+                else
+                {
+                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunctionCodeError;
+                }
+            }
+            else
+            {
+                resultMessage = OperationStatusRotatingPlatform.FeedbackCommandCHKError;
+            }
+
+            return resultMessage;
+        }
+
+        /// <summary>
+        /// 获得功能码为A3的转台反馈指令的EV值
+        /// </summary>
+        /// <param name="receivedData"></param>
+        /// <returns></returns>
+        public double GetEV(byte[] receivedData)
+        {
+            double result = 0;
+
+            for(int i=0;i<4;i++)
+            {
+                result+=receivedData[11+i]-
+            }
+
+        }
+
+        /// <summary>
         /// 获取指令校验码
         /// </summary>
         /// <param name="OriginalArray"></param>
@@ -321,6 +390,17 @@ namespace ATDC_V2._0
         ConnectCL200ToPCFailure,
         GetEVxySuccess,
         GetEVxyFailure,
+        FeedbackCommandCHKError,
+        FeedbackCommandFunctionCodeError,
+        FeedbackCommandFunction45Success,
+        FeedbackCommandFunction51Success,
+        FeedbackCommandFunctionA1Success,
+        FeedbackCommandFunction40Success,
+        FeedbackCommandFunction42Success,
+        FeedbackCommandFunction34Success,
+        FeedbackCommandFunctionA3Success,
+
+
         OriginalStatus
     }
 }
