@@ -13,5 +13,11 @@ namespace ATDC_V2._0
     /// </summary>
     public partial class App : Application
     {
+        
+    }
+
+    public static class ConfigurationParameters
+    {
+        static public string rotatingPlatformPortName;
     }
 }

@@ -106,6 +106,8 @@ namespace ATDC_V2._0
 
             //转台
 
+            ConfigurationParameters.rotatingPlatformPortName = RotatingPlatformPortSelect.SelectedItem.ToString();
+
         }
 
         #region MiniCCR不含通讯，设备连接

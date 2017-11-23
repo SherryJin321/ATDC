@@ -4,11 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO.Ports;
+using System.Collections;
 
 namespace ATDC_V2._0
 {
+    public delegate void EVDataHandler(double EVData);
+    public delegate void xyDataHandler(Coordinates xyData);
+
     class RotatingPlatform
     {
+        public event EVDataHandler EVDataEvent;
+        public event xyDataHandler xyDataEvent;
+
+        #region 发送指令
         /// <summary>
         /// 打开串口
         /// </summary>
@@ -209,7 +217,7 @@ namespace ATDC_V2._0
         }
 
         /// <summary>
-        /// 获取传感器EV、x、y
+        /// 获取传感器EV
         /// </summary>
         /// <param name="serialPort"></param>
         /// <returns></returns>
@@ -231,22 +239,78 @@ namespace ATDC_V2._0
             }
 
             return result;
-        }        
+        }
 
+        #endregion
+
+        #region 接收指令
         /// <summary>
         /// 接收、解析反馈指令
         /// </summary>
         /// <param name="serialPort"></param>
         /// <returns></returns>
-        public OperationStatusRotatingPlatform AnalysisFeedbackCommand(SerialPort serialPort)
+        byte[] integrityData = new byte[2];
+        ArrayList notIntegrityData = new ArrayList();
+        public OperationStatusRotatingPlatform GetFeedbackCommand(SerialPort serialPort)
         {
             OperationStatusRotatingPlatform result = OperationStatusRotatingPlatform.OriginalStatus;
 
-            byte[] receivedData = new byte[serialPort.BytesToRead];
-            serialPort.Read(receivedData, 0, receivedData.Length);
+            if(serialPort.IsOpen==true)
+            {
+                byte[] receivedData = new byte[serialPort.BytesToRead];
+                serialPort.Read(receivedData, 0, receivedData.Length);
 
-            
+                if(receivedData.Length!=0)
+                {
+                    bool IsCommandIntegrity = false;
+                    IsCommandIntegrity = JudgeCommandIntegrity(receivedData);
 
+                    if(IsCommandIntegrity==false)
+                    {
+                        notIntegrityData.AddRange(receivedData);
+
+                        byte[] notIntegrityCommand = new byte[notIntegrityData.Count];
+                        for(int i=0;i<notIntegrityCommand.Length;i++)
+                        {
+                            notIntegrityCommand[i] = (byte)notIntegrityData[i];
+                        }
+                        IsCommandIntegrity = JudgeCommandIntegrity(notIntegrityCommand);
+
+                        if(IsCommandIntegrity==true)
+                        {
+                            integrityData = new byte[notIntegrityCommand.Length];
+                            for (int i = 0; i < integrityData.Length; i++)
+                            {
+                                integrityData[i] = notIntegrityCommand[i];
+                            }
+                        }
+                    }
+                    else
+                    {
+                        integrityData = new byte[receivedData.Length];
+                        for(int i=0;i<integrityData.Length;i++)
+                        {
+                            integrityData[i] = receivedData[i];
+                        }
+                    }
+                    if(IsCommandIntegrity==true)
+                    {
+                        notIntegrityData.Clear();
+                        result = AnalysisFeedbackCommand(integrityData);
+                    }
+
+                }
+                else
+                {
+                    result = OperationStatusRotatingPlatform.FeedbackCommandLengthIsNull;
+                }
+            }
+            else
+            {
+                result = OperationStatusRotatingPlatform.FeedbackCommandSerialPortFailure;
+            }
+
+            return result;
         }
 
         /// <summary>
@@ -282,7 +346,7 @@ namespace ATDC_V2._0
             }
 
             return isIntegrated;
-        }
+        }         
 
         /// <summary>
         /// 解析反馈指令
@@ -291,50 +355,56 @@ namespace ATDC_V2._0
         /// <returns></returns>
         public OperationStatusRotatingPlatform AnalysisFeedbackCommand(byte[] receivedData)
         {
-            OperationStatusRotatingPlatform resultMessage = OperationStatusRotatingPlatform.OriginalStatus;
+            OperationStatusRotatingPlatform result = OperationStatusRotatingPlatform.OriginalStatus;
 
             byte CHK = GetCHK(receivedData);
             if(CHK==receivedData[receivedData.Length-1])
             {
                 if(receivedData[2]==0x45)
                 {
-                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunction45Success;
+                    Coordinates xy = new Coordinates();
+                    xy = GetCoordinates(receivedData);
+                    xyDataEvent(xy);
+                    result = OperationStatusRotatingPlatform.FeedbackCommandFunction45Success;
                 }
                 else if(receivedData[2]==0x51)
                 {
-                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunction51Success;
+                    result = OperationStatusRotatingPlatform.FeedbackCommandFunction51Success;
                 }
                 else if(receivedData[2]==0xA1)
                 {
-                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunctionA1Success;
+                    result = OperationStatusRotatingPlatform.FeedbackCommandFunctionA1Success;
                 }
                 else if(receivedData[2]==0x40)
                 {
-                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunction40Success;
+                    result = OperationStatusRotatingPlatform.FeedbackCommandFunction40Success;
                 }
                 else if(receivedData[2]==0x42)
                 {
-                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunction42Success;
+                    result = OperationStatusRotatingPlatform.FeedbackCommandFunction42Success;
                 }
                 else if(receivedData[2]==0x34)
                 {
-                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunction34Success;
+                    result = OperationStatusRotatingPlatform.FeedbackCommandFunction34Success;
                 }
                 else if(receivedData[2]==0xA3)
                 {
-                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunctionA3Success;
+                    double EV = GetEV(receivedData);
+                    EVDataEvent(EV);
+                    result = OperationStatusRotatingPlatform.FeedbackCommandFunctionA3Success;
+
                 }
                 else
                 {
-                    resultMessage = OperationStatusRotatingPlatform.FeedbackCommandFunctionCodeError;
+                    result = OperationStatusRotatingPlatform.FeedbackCommandFunctionCodeError;
                 }
             }
             else
             {
-                resultMessage = OperationStatusRotatingPlatform.FeedbackCommandCHKError;
+                result = OperationStatusRotatingPlatform.FeedbackCommandCHKError;
             }
 
-            return resultMessage;
+            return result;
         }
 
         /// <summary>
@@ -348,10 +418,50 @@ namespace ATDC_V2._0
 
             for(int i=0;i<4;i++)
             {
-                result+=receivedData[11+i]-
+                result += (receivedData[11 + i] - 0x30) * Math.Pow(10, 3 - i);
             }
 
+            result *= Math.Pow(10, (receivedData[15] - 0x30 - 4));
+
+            if(receivedData[10]==0x2B)
+            {
+                result = result * 1;
+            }
+            else if(receivedData[10]==0x2D)
+            {
+                result = result * (-1);
+            }
+
+            return result;
         }
+
+        /// <summary>
+        /// 获得功能码为45的转台反馈指令的坐标值
+        /// </summary>
+        /// <param name="receivedData"></param>
+        /// <returns></returns>
+        public Coordinates GetCoordinates(byte[] receivedData)
+        {
+            Coordinates result = new Coordinates();
+
+            short xShort = 0;
+            short yShort = 0;
+
+            xShort = receivedData[4];
+            xShort <<= 8;
+            xShort |= receivedData[5];
+
+            yShort = receivedData[6];
+            yShort <<= 8;
+            yShort |= receivedData[7];
+
+            result.x = xShort/100.0;
+            result.y = yShort/100.0;
+
+            return result;
+        }
+
+        #endregion
 
         /// <summary>
         /// 获取指令校验码
@@ -370,6 +480,12 @@ namespace ATDC_V2._0
             return result;
         }
 
+    }
+
+    public struct Coordinates
+    {
+        public double x;
+        public double y;
     }
 
     enum OperationStatusRotatingPlatform
@@ -399,6 +515,8 @@ namespace ATDC_V2._0
         FeedbackCommandFunction42Success,
         FeedbackCommandFunction34Success,
         FeedbackCommandFunctionA3Success,
+        FeedbackCommandSerialPortFailure,
+        FeedbackCommandLengthIsNull,
 
 
         OriginalStatus
