@@ -418,7 +418,10 @@ namespace ATDC_V2._0
 
             for(int i=0;i<4;i++)
             {
-                result += (receivedData[11 + i] - 0x30) * Math.Pow(10, 3 - i);
+                if(receivedData[11+i]!=0x20)
+                {
+                    result += (receivedData[11 + i] - 0x30) * Math.Pow(10, 3 - i);
+                }
             }
 
             result *= Math.Pow(10, (receivedData[15] - 0x30 - 4));
@@ -430,6 +433,10 @@ namespace ATDC_V2._0
             else if(receivedData[10]==0x2D)
             {
                 result = result * (-1);
+            }
+            else if(receivedData[10]==0x3D)
+            {
+                result = 0;
             }
 
             return result;

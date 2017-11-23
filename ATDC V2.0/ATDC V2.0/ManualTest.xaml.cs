@@ -50,7 +50,10 @@ namespace ATDC_V2._0
         #region 手动测试下，EVDataEvent事件的处理函数
         public void DisplayEVDate(double EVData)
         {
-            ManualTestEVValueDisplay.Text = EVData.ToString();
+            this.Dispatcher.Invoke(new System.Action(() =>
+            {
+                ManualTestEVValueDisplay.Text = EVData.ToString();
+            }));
         }
         #endregion
 
