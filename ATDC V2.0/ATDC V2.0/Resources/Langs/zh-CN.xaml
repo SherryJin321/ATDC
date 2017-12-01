@@ -85,6 +85,7 @@
     <system:String x:Key="LangsManualTestCurrentValue">电流（A）：</system:String>
     <system:String x:Key="LangsManualTestEVValue">EV（lx）：</system:String>
     <system:String x:Key="LangsManualTestStart">开始测试</system:String>
+    <system:String x:Key="LangsManualTestStop">停止测试</system:String>
     <system:String x:Key="LangsManualTestSaveData">保存数据</system:String>
     <system:String x:Key="LangsManualTestGenerateCurve">调光曲线</system:String>
 

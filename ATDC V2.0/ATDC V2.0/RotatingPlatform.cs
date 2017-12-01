@@ -524,8 +524,6 @@ namespace ATDC_V2._0
         FeedbackCommandFunctionA3Success,
         FeedbackCommandSerialPortFailure,
         FeedbackCommandLengthIsNull,
-
-
         OriginalStatus
     }
 }

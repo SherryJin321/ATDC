@@ -22,10 +22,24 @@ namespace ATDC_V2._0
     /// </summary>
     public partial class ManualTest : Page
     {
-        //Timer ManualTimer = new Timer();
+        Timer ManualTimer = new Timer(1000);
         SerialPort RotatingPlatformSerialPort = new SerialPort();
+        SerialPort miniCCRSerialPort = new SerialPort();
         RotatingPlatform myRotatingPlatform = new RotatingPlatform();
+        //缺少CL500A类对象的声明和创建
+        MiniCCRWithoutCommunicationInterface myMiniCCRWithoutCommunicationInterface = new MiniCCRWithoutCommunicationInterface();
+        //CCR含通讯协议，目前尚未开发
 
+        int count = 0;
+        double current = 0;
+        byte[] EVDataArray = new byte[41];
+
+        #region 中英文切换字符串
+        string stringManualTestStart = (string)System.Windows.Application.Current.FindResource("LangsManualTestStart");
+        string stringManualTestStop = (string)System.Windows.Application.Current.FindResource("LangsManualTestStop");
+
+
+        #endregion
 
         public ManualTest()
         {
@@ -34,26 +48,45 @@ namespace ATDC_V2._0
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-            myRotatingPlatform.EVDataEvent += new EVDataHandler(DisplayEVDate);
+            myRotatingPlatform.EVDataEvent += new EVDataHandler(DisplayEVData);
             RotatingPlatformSerialPort.DataReceived += new SerialDataReceivedEventHandler(PortDataReceived);
+            //miniCCRSerialPort.DataReceived += new SerialDataReceivedEventHandler(CCRPortDataReceived);
+            ManualTimer.Elapsed += new ElapsedEventHandler(QueryEVData);
 
-            //testArray[32] = myRotatingPlatform.GetCHK(testArray);
-            //OperationStatusRotatingPlatform result = myRotatingPlatform.AnalysisFeedbackCommand(testArray);
-            //ManualTestCCRModelDisplay.Text = result.ToString();
-            //ManualTestEVValueDisplay.Text = myRotatingPlatform.GetEV(testArray).ToString();
-            //Coordinates xy = new Coordinates();
-            //xy = myRotatingPlatform.GetCoordinates(testArray1);
+            
 
-            //ManualTestEVValueDisplay.Text = "("+xy.x.ToString() + "," + xy.y.ToString()+")";
+            ManualTestSensorModelDisplay.Text = ConfigurationParameters.sensorModelName;
+            ManualTestCCRModelDisplay.Text = ConfigurationParameters.miniCCRModelName;
+            
         }
 
         #region 手动测试下，EVDataEvent事件的处理函数
-        public void DisplayEVDate(double EVData)
+        public void DisplayEVData(double EVData)
         {
             this.Dispatcher.Invoke(new System.Action(() =>
             {
                 ManualTestEVValueDisplay.Text = EVData.ToString();
             }));
+        }
+        #endregion
+
+        #region 手动测试下，定时器计时事件的处理函数
+        private void QueryEVData(object source,ElapsedEventArgs e)
+        {            
+            OperationStatusRotatingPlatform result = OperationStatusRotatingPlatform.OriginalStatus;
+
+            if (RotatingPlatformSerialPort.IsOpen == false)
+            {
+                result = myRotatingPlatform.OpenPort(RotatingPlatformSerialPort, ConfigurationParameters.rotatingPlatformPortName);
+            }
+
+            result = myRotatingPlatform.GetEVxy(RotatingPlatformSerialPort);
+
+            count++;
+            if(count>41)
+            {
+                ManualTimer.Stop();
+            }
         }
         #endregion
 
@@ -66,17 +99,29 @@ namespace ATDC_V2._0
 
         #endregion
 
-        #region 开始测试
+        #region 开始测试/停止测试
         private void ManualTestStart_Click(object sender, RoutedEventArgs e)
         {
-            OperationStatusRotatingPlatform result = OperationStatusRotatingPlatform.OriginalStatus;
+            LanguageRefresh();
 
-            if (RotatingPlatformSerialPort.IsOpen==false)
+            if (ManualTestStart.Content.ToString()== stringManualTestStart)
             {
-                result = myRotatingPlatform.OpenPort(RotatingPlatformSerialPort, ConfigurationParameters.rotatingPlatformPortName);
+                ManualTestStart.Content = stringManualTestStop;
+                ManualTimer.Start();
+            }
+            else if(ManualTestStart.Content.ToString() == stringManualTestStop)
+            {
+                ManualTestStart.Content = stringManualTestStart;
+                ManualTimer.Stop();
             }
 
-            result = myRotatingPlatform.GetEVxy(RotatingPlatformSerialPort);
+            count = 0;
+            current = 6.7;
+            EVDataArray = new byte[41];
+
+            ManualTestCountDisplay.Text = count.ToString() + " / 41 ";
+            ManualTestCurrentValueDisplay.Text = current.ToString();
+            ManualTestEVValueDisplay.Text = "";
         }
         #endregion
 
@@ -84,6 +129,14 @@ namespace ATDC_V2._0
         private void PortDataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             myRotatingPlatform.GetFeedbackCommand(RotatingPlatformSerialPort);
+        }
+        #endregion
+
+        #region 实时刷新中英文字符
+        public void LanguageRefresh()
+        {
+            stringManualTestStart = (string)System.Windows.Application.Current.FindResource("LangsManualTestStart");
+            stringManualTestStop = (string)System.Windows.Application.Current.FindResource("LangsManualTestStop");
         }
         #endregion
 

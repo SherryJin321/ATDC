@@ -84,6 +84,7 @@
     <system:String x:Key="LangsManualTestCurrentValue">Current (A):</system:String>
     <system:String x:Key="LangsManualTestEVValue">EV (lx):</system:String>
     <system:String x:Key="LangsManualTestStart">Start Test</system:String>
+    <system:String x:Key="LangsManualTestStop">Stop Test</system:String>
     <system:String x:Key="LangsManualTestSaveData">Save Data</system:String>
     <system:String x:Key="LangsManualTestGenerateCurve">Dimming Curve</system:String>
 

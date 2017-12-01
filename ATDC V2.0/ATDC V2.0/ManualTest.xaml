@@ -8,7 +8,7 @@
       d:DesignHeight="557" d:DesignWidth="1000"
       Title="ManualTest">
 
-    <Grid Height="557" VerticalAlignment="Bottom" Loaded="Grid_Loaded">
+    <Grid Loaded="Grid_Loaded">
         <Grid.RowDefinitions>
             <RowDefinition Height="80" />
             <RowDefinition />
@@ -28,13 +28,13 @@
         <Label Content="{DynamicResource LangsManualTestParameterDisplay}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,190,0,0" FontSize="16" FontWeight="Bold"/>
         <Label Content="{DynamicResource LangsManualTestCount}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,240,0,0" FontSize="16"/>
         <Border Grid.Row="1" Width="150" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,265,0,0" BorderBrush="Gray" BorderThickness="1"/>
-        <TextBlock x:Name="ManualTestCountDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,240,0,0" Padding="6,6,0,0" FontSize="16"/>
+        <TextBlock x:Name="ManualTestCountDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,240,0,0" Padding="0,6,0,0" FontSize="16" TextAlignment="Center"/>
         <Label Content="{DynamicResource LangsManualTestCurrentValue}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,290,0,0" FontSize="16"/>
         <Border Grid.Row="1" Width="150" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,315,0,0" BorderBrush="Gray" BorderThickness="1"/>
-        <TextBlock x:Name="ManualTestCurrentValueDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,290,0,0" Padding="6,6,0,0" FontSize="16"/>
+        <TextBlock x:Name="ManualTestCurrentValueDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,290,0,0" Padding="0,6,0,0" FontSize="16" TextAlignment="Center"/>
         <Label Content="{DynamicResource LangsManualTestEVValue}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,340,0,0" FontSize="16"/>
         <Border Grid.Row="1" Width="150" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,365,0,0" BorderBrush="Gray" BorderThickness="1"/>
-        <TextBlock x:Name="ManualTestEVValueDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,340,0,0" Padding="6,6,0,0" FontSize="16"/>
+        <TextBlock x:Name="ManualTestEVValueDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,340,0,0" Padding="0,6,0,0" FontSize="16" TextAlignment="Center"/>
         <Border Grid.Row="5" Width="180" Height="60" Margin="150,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
             <Button x:Name="ManualTestStart" Content="{DynamicResource LangsManualTestStart}" Width="180" Height="60" Background="{x:Null}" BorderThickness="0" FontSize="22" Click="ManualTestStart_Click"/>
         </Border>
