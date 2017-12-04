@@ -85,8 +85,11 @@ namespace ATDC_V2._0
             else if(ConfigurationParameters.miniCCRModelName == 1)
             {
                 ManualTestCCRModelDisplay.Text = stringMiniCCRWithCommunicationInterface;
-            }            
-            
+            }
+
+            ManualTestSensorStatusDisplay.Text = ConfigurationParameters.rotatingPlatformPortName;
+
+
         }
 
         #region 手动测试下，EVDataEvent事件的处理函数
@@ -106,10 +109,16 @@ namespace ATDC_V2._0
             {
                 OperationStatusRotatingPlatform result = OperationStatusRotatingPlatform.OriginalStatus;                
                 result = myRotatingPlatform.OpenPort(RotatingPlatformSerialPort, ConfigurationParameters.rotatingPlatformPortName);
-                ManualTestSensorStatusDisplay.Text = result.ToString();
+                this.Dispatcher.Invoke(new System.Action(() =>
+                {
+                    ManualTestSensorStatusDisplay.Text = result.ToString();
+                }));
 
-                result = myRotatingPlatform.GetEVxy(RotatingPlatformSerialPort);
-                ManualTestSensorStatusDisplay.Text = result.ToString();
+                //result = myRotatingPlatform.GetEVxy(RotatingPlatformSerialPort);
+                //this.Dispatcher.Invoke(new System.Action(() =>
+                //{
+                //    ManualTestSensorStatusDisplay.Text = result.ToString();
+                //}));
             }
             else if(ConfigurationParameters.sensorModelName== 0)
             {
@@ -159,7 +168,7 @@ namespace ATDC_V2._0
                     result = myMiniCCRWithoutCommunicationInterface.OpenPort(miniCCRSerialPort, ConfigurationParameters.miniCCRPortName);
                     ManualTestCCRStatusDisplay.Text = result.ToString();
 
-                    result = myMiniCCRWithoutCommunicationInterface.ConnectCCR(miniCCRSerialPort);                  
+                    result = myMiniCCRWithoutCommunicationInterface.ConnectCCR(miniCCRSerialPort);
                     ManualTestCCRStatusDisplay.Text = result.ToString();
                 }
                 else if(ConfigurationParameters.miniCCRModelName== 1)
