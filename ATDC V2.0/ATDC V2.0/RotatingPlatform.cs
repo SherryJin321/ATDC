@@ -25,18 +25,19 @@ namespace ATDC_V2._0
         /// <returns></returns>
         public OperationStatusRotatingPlatform OpenPort(SerialPort serialPort, string portName)
         {
-            OperationStatusRotatingPlatform result = OperationStatusRotatingPlatform.OriginalStatus;
-
-            serialPort.PortName = portName;
-            serialPort.BaudRate = 38400;
-            serialPort.Parity = Parity.None;
-            serialPort.DataBits = 8;
-            serialPort.StopBits = StopBits.One;
+            OperationStatusRotatingPlatform result = OperationStatusRotatingPlatform.OriginalStatus;  
+            
 
             try
             {
                 if (serialPort.IsOpen == false)
                 {
+                    serialPort.PortName = portName;
+                    serialPort.BaudRate = 38400;
+                    serialPort.Parity = Parity.None;
+                    serialPort.DataBits = 8;
+                    serialPort.StopBits = StopBits.One;
+
                     serialPort.Open();
                 }
                 if (serialPort.IsOpen == true)

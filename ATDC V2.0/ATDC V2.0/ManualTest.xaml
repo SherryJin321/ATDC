@@ -22,8 +22,8 @@
         <Border Grid.Row="1" Width="150" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,75,0,0" BorderBrush="Gray" BorderThickness="1"/>
         <TextBlock x:Name="ManualTestSensorModelDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,50,0,0" Padding="6,6,0,0" FontSize="16"/>
         <Label Content="{DynamicResource LangsManualTestSensorStatus}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,90,0,0" FontSize="16" Height="30"/>
-        <Border Grid.Row="1" Width="150" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,115,0,0" BorderBrush="Gray" BorderThickness="1"/>
-        <TextBlock x:Name="ManualTestSensorStatusDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,90,0,0" Padding="6,6,0,0" FontSize="16"/>
+        <Border Grid.Row="1" Width="310" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,115,0,0" BorderBrush="Gray" BorderThickness="1"/>
+        <TextBlock x:Name="ManualTestSensorStatusDisplay" Grid.Row="1" Width="310" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,90,0,0" Padding="6,6,0,0" FontSize="16"/>
         
         <Label Content="{DynamicResource LangsManualTestCCRModel}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,130,0,0" FontSize="16"/>
         <Border Grid.Row="1" Width="310" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,155,0,0" BorderBrush="Gray" BorderThickness="1"/>

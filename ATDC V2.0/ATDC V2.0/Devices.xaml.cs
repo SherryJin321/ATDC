@@ -108,13 +108,10 @@ namespace ATDC_V2._0
             if(SensorModelSelect.SelectedIndex==0)
             {
                 //CL-500A
-            }
-            else
-            {
-                //CL-200A
-            }
+            }            
 
             //转台
+            ConnectRotatingPlatform();
 
             GetGlobalParameters();
         }
@@ -166,9 +163,9 @@ namespace ATDC_V2._0
 
             string portName = RotatingPlatformPortSelect.SelectedItem.ToString();
             myOperationStatusRotatingPlatform = myRotatingPlatform.OpenPort(SerialPortRotatingPlatform, portName);
-            myOperationStatusRotatingPlatform = myRotatingPlatform.GetDegree(SerialPortRotatingPlatform);
+            myOperationStatusRotatingPlatform = myRotatingPlatform.ConnectCL200ToPC(SerialPortRotatingPlatform);
 
-            Thread.Sleep(50);
+            Thread.Sleep(1000);
             ResultAnalysisRotatingPlatform();
             myOperationStatusRotatingPlatform = myRotatingPlatform.ClosePort(SerialPortRotatingPlatform);
         }
@@ -180,17 +177,28 @@ namespace ATDC_V2._0
 
         public void ResultAnalysisRotatingPlatform()
         {
-            if(myOperationStatusRotatingPlatform== OperationStatusRotatingPlatform.FeedbackCommandFunction45Success)
+
+            if (myOperationStatusRotatingPlatform == OperationStatusRotatingPlatform.FeedbackCommandFunction34Success)
             {
                 ConnectStatusRotatingPlatform.Content = DeviceConnectSuccess;
+                if(SensorModelSelect.SelectedIndex == 1)
+                {
+                    ConnectStatusSensor.Content= DeviceConnectSuccess;
+                }
             }
             else
             {
-                ConnectStatusMiniCCR.Content = DeviceConnectFailure;
+                ConnectStatusRotatingPlatform.Content = DeviceConnectFailure;
+                if (SensorModelSelect.SelectedIndex == 1)
+                {
+                    ConnectStatusSensor.Content = DeviceConnectFailure;
+                }
             }
         }
 
         #endregion
+
+        
 
         #endregion
     }

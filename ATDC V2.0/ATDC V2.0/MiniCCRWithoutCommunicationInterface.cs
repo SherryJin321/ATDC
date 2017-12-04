@@ -17,18 +17,18 @@ namespace ATDC_V2._0
         /// <returns></returns>
         public OperationStatusMiniCCRWithout OpenPort(SerialPort serialPort, string portName)
         {
-            OperationStatusMiniCCRWithout result = OperationStatusMiniCCRWithout.OriginalStatus;
-
-            serialPort.PortName = portName;
-            serialPort.BaudRate = 9600;
-            serialPort.Parity = Parity.None;
-            serialPort.DataBits = 8;
-            serialPort.StopBits = StopBits.One;
+            OperationStatusMiniCCRWithout result = OperationStatusMiniCCRWithout.OriginalStatus;           
 
             try
             {
                 if (serialPort.IsOpen == false)
                 {
+                    serialPort.PortName = portName;
+                    serialPort.BaudRate = 9600;
+                    serialPort.Parity = Parity.None;
+                    serialPort.DataBits = 8;
+                    serialPort.StopBits = StopBits.One;
+
                     serialPort.Open();
                 }
                 if(serialPort.IsOpen==true)

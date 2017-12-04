@@ -87,8 +87,6 @@ namespace ATDC_V2._0
                 ManualTestCCRModelDisplay.Text = stringMiniCCRWithCommunicationInterface;
             }
 
-            ManualTestSensorStatusDisplay.Text = ConfigurationParameters.rotatingPlatformPortName;
-
 
         }
 
@@ -114,11 +112,11 @@ namespace ATDC_V2._0
                     ManualTestSensorStatusDisplay.Text = result.ToString();
                 }));
 
-                //result = myRotatingPlatform.GetEVxy(RotatingPlatformSerialPort);
-                //this.Dispatcher.Invoke(new System.Action(() =>
-                //{
-                //    ManualTestSensorStatusDisplay.Text = result.ToString();
-                //}));
+                result = myRotatingPlatform.GetEVxy(RotatingPlatformSerialPort);
+                this.Dispatcher.Invoke(new System.Action(() =>
+                {
+                    ManualTestSensorStatusDisplay.Text = result.ToString();
+                }));
             }
             else if(ConfigurationParameters.sensorModelName== 0)
             {
@@ -130,7 +128,10 @@ namespace ATDC_V2._0
         #region 手动测试下，定时器计时事件的处理函数，用于恢复保存数据按钮始能
         private void RestoreSetting(object source, ElapsedEventArgs e)
         {
-            ManualTestSaveData.IsEnabled = true;
+            this.Dispatcher.Invoke(new System.Action(() =>
+            {
+                ManualTestSaveData.IsEnabled = true;
+            }));
             SaveDataProtection.Stop();
         }
         #endregion
@@ -175,13 +176,14 @@ namespace ATDC_V2._0
                 {
                     //待开发
                 }
-
+                ManualTestSaveData.IsEnabled = true;
                 ManualTimer.Start();
             }
             else if(ManualTestStart.Content.ToString() == stringManualTestStop)
             {
                 ManualTestStart.Content = stringManualTestStart;
                 ManualTimer.Stop();
+                ManualTestSaveData.IsEnabled = true;
 
                 if (ConfigurationParameters.miniCCRModelName == 0)
                 {
@@ -239,14 +241,15 @@ namespace ATDC_V2._0
         {
             EVDataArray[count] = Convert.ToDouble(ManualTestEVValueDisplay.Text);
             count++;
-            current -= 0.1;
+            current =current- 0.1;
 
             ManualTestCountDisplay.Text = count.ToString() + " / 41 ";
-            ManualTestCurrentValueDisplay.Text = current.ToString();
+            ManualTestCurrentValueDisplay.Text =Convert.ToString(Math.Round(current,2));
 
             if (count==41)
             {
                 ManualTimer.Stop();
+                ManualTestSaveData.IsEnabled = false;
             }
 
             ManualTestSaveData.IsEnabled = false;
