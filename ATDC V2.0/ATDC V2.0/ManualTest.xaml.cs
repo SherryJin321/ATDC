@@ -249,9 +249,13 @@ namespace ATDC_V2._0
                 ManualTimer.Stop();
                 ManualTestSaveData.IsEnabled = false;
             }
+            else
+            {
+                ManualTestSaveData.IsEnabled = false;
+                SaveDataProtection.Start();
+            }
 
-            ManualTestSaveData.IsEnabled = false;
-            SaveDataProtection.Start();
+            
         }
         #endregion
     }
