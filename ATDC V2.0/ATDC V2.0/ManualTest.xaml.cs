@@ -86,8 +86,6 @@ namespace ATDC_V2._0
             {
                 ManualTestCCRModelDisplay.Text = stringMiniCCRWithCommunicationInterface;
             }
-
-
         }
 
         #region 手动测试下，EVDataEvent事件的处理函数
@@ -251,9 +249,11 @@ namespace ATDC_V2._0
                 ManualTimer.Stop();
                 ManualTestSaveData.IsEnabled = false;
             }
-
-            ManualTestSaveData.IsEnabled = false;
-            SaveDataProtection.Start();
+            else
+            {
+                ManualTestSaveData.IsEnabled = false;
+                SaveDataProtection.Start();
+            }            
         }
         #endregion
     }
