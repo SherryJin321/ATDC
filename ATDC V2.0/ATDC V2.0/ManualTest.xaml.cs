@@ -183,7 +183,7 @@ namespace ATDC_V2._0
             {
                 ManualTestStart.Content = stringManualTestStart;
                 ManualTimer.Stop();
-                ManualTestSaveData.IsEnabled = true;
+                ManualTestSaveData.IsEnabled=true;
 
                 if (ConfigurationParameters.miniCCRModelName == 0)
                 {
@@ -251,9 +251,12 @@ namespace ATDC_V2._0
                 ManualTimer.Stop();
                 ManualTestSaveData.IsEnabled = false;
             }
-
-            ManualTestSaveData.IsEnabled = false;
-            SaveDataProtection.Start();
+            else
+            {
+                ManualTestSaveData.IsEnabled = false;
+                SaveDataProtection.Start();
+            }
+            
         }
         #endregion
     }
