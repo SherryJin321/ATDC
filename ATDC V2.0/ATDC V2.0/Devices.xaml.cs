@@ -122,7 +122,7 @@ namespace ATDC_V2._0
         #region MiniCCR不含通讯，设备连接
         SerialPort SerialPortMiniCCRWithout = new SerialPort();
         MiniCCRWithoutCommunicationInterface myMiniCCRWithoutCommunicationInterface = new MiniCCRWithoutCommunicationInterface();
-        OperationStatusMiniCCRWithout myOperationStatusMiniCCRWithout;
+        OperationStatusMiniCCRWithout myOperationStatusMiniCCRWithout=OperationStatusMiniCCRWithout.OriginalStatus;
 
         public void ConnectMiniCCRWithoutCommunicationInterface()
         {
@@ -153,6 +153,43 @@ namespace ATDC_V2._0
                 ConnectStatusMiniCCR.Content = DeviceConnectFailure;
             }
         }
+        #endregion
+
+        #region 转台，设备连接
+        SerialPort SerialPortRotatingPlatform = new SerialPort();
+        RotatingPlatform myRotatingPlatform = new RotatingPlatform();
+        OperationStatusRotatingPlatform myOperationStatusRotatingPlatform=OperationStatusRotatingPlatform.OriginalStatus;
+
+        public void ConnectRotatingPlatform()
+        {
+            SerialPortRotatingPlatform.DataReceived += new SerialDataReceivedEventHandler(SerialPortRotatingPlatform_DateReceived);
+
+            string portName = RotatingPlatformPortSelect.SelectedItem.ToString();
+            myOperationStatusRotatingPlatform = myRotatingPlatform.OpenPort(SerialPortRotatingPlatform, portName);
+            myOperationStatusRotatingPlatform = myRotatingPlatform.GetDegree(SerialPortRotatingPlatform);
+
+            Thread.Sleep(50);
+            ResultAnalysisRotatingPlatform();
+            myOperationStatusRotatingPlatform = myRotatingPlatform.ClosePort(SerialPortRotatingPlatform);
+        }
+
+        private void SerialPortRotatingPlatform_DateReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            myOperationStatusRotatingPlatform = myRotatingPlatform.GetFeedbackCommand(SerialPortRotatingPlatform);
+        }
+
+        public void ResultAnalysisRotatingPlatform()
+        {
+            if(myOperationStatusRotatingPlatform== OperationStatusRotatingPlatform.FeedbackCommandFunction45Success)
+            {
+                ConnectStatusRotatingPlatform.Content = DeviceConnectSuccess;
+            }
+            else
+            {
+                ConnectStatusMiniCCR.Content = DeviceConnectFailure;
+            }
+        }
+
         #endregion
 
         #endregion
