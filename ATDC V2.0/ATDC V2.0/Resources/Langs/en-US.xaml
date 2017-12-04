@@ -75,10 +75,12 @@
 
     <!--前台代码，手动测试 页面-->
     <system:String x:Key="LangsManualTestTitle">Manual Test</system:String>
-    <system:String x:Key="LangsManualTestOperation">Button Operation</system:String>
-    <system:String x:Key="LangsManualTestDevicesType">Devices Type</system:String>
-    <system:String x:Key="LangsManualTestSensorModel">Sensor Type:</system:String>
-    <system:String x:Key="LangsManualTestCCRModel">Mini CCR Type:</system:String>
+    <system:String x:Key="LangsManualTestOperation">Operation</system:String>
+    <system:String x:Key="LangsManualTestDevicesType">Devices</system:String>
+    <system:String x:Key="LangsManualTestSensorModel">Sensor:</system:String>
+    <system:String x:Key="LangsManualTestSensorStatus">Status：</system:String>
+    <system:String x:Key="LangsManualTestCCRModel">Mini CCR:</system:String>
+    <system:String x:Key="LangsManualTestCCRStatus">Status：</system:String>
     <system:String x:Key="LangsManualTestParameterDisplay">Parameter Display</system:String>
     <system:String x:Key="LangsManualTestCount">Count:</system:String>
     <system:String x:Key="LangsManualTestCurrentValue">Current (A):</system:String>

@@ -19,8 +19,8 @@ namespace ATDC_V2._0
     public static class ConfigurationParameters
     {
         static public string rotatingPlatformPortName;
-        static public string sensorModelName;
-        static public string miniCCRModelName;
         static public string miniCCRPortName;
+        static public int sensorModelName;
+        static public int miniCCRModelName;
     }
 }

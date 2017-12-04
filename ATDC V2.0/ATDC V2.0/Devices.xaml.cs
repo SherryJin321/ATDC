@@ -74,6 +74,16 @@ namespace ATDC_V2._0
 
         #endregion
 
+        #region 获取全局变量
+        public void GetGlobalParameters()
+        {
+            ConfigurationParameters.miniCCRModelName = MiniCCRModelSelect.SelectedIndex;
+            ConfigurationParameters.miniCCRPortName = MiniCCRPortSelect.SelectedItem.ToString();
+            ConfigurationParameters.rotatingPlatformPortName = RotatingPlatformPortSelect.SelectedItem.ToString();
+            ConfigurationParameters.sensorModelName = SensorModelSelect.SelectedIndex;
+        }
+        #endregion
+
         #region 关闭 设备 页面
         private void CloseDevicesPage_Click(object sender, RoutedEventArgs e)
         {
@@ -106,8 +116,7 @@ namespace ATDC_V2._0
 
             //转台
 
-            ConfigurationParameters.rotatingPlatformPortName = RotatingPlatformPortSelect.SelectedItem.ToString();
-
+            GetGlobalParameters();
         }
 
         #region MiniCCR不含通讯，设备连接

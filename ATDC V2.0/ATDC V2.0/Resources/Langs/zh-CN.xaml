@@ -76,10 +76,12 @@
 
     <!--前台代码，手动测试 页面-->
     <system:String x:Key="LangsManualTestTitle">手动测试</system:String>
-    <system:String x:Key="LangsManualTestOperation">按钮操作</system:String>
-    <system:String x:Key="LangsManualTestDevicesType">设备型号</system:String>
-    <system:String x:Key="LangsManualTestSensorModel">传感器型号：</system:String>
-    <system:String x:Key="LangsManualTestCCRModel">Mini CCR 型号：</system:String>
+    <system:String x:Key="LangsManualTestOperation">操作</system:String>
+    <system:String x:Key="LangsManualTestDevicesType">设备</system:String>
+    <system:String x:Key="LangsManualTestSensorModel">传感器：</system:String>
+    <system:String x:Key="LangsManualTestSensorStatus">状态：</system:String>
+    <system:String x:Key="LangsManualTestCCRModel">Mini CCR：</system:String>
+    <system:String x:Key="LangsManualTestCCRStatus">状态：</system:String>
     <system:String x:Key="LangsManualTestParameterDisplay">参数显示</system:String>
     <system:String x:Key="LangsManualTestCount">计次：</system:String>
     <system:String x:Key="LangsManualTestCurrentValue">电流（A）：</system:String>

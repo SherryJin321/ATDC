@@ -23,6 +23,7 @@ namespace ATDC_V2._0
     public partial class ManualTest : Page
     {
         Timer ManualTimer = new Timer(1000);
+        Timer SaveDataProtection = new Timer(100);
         SerialPort RotatingPlatformSerialPort = new SerialPort();
         SerialPort miniCCRSerialPort = new SerialPort();
         RotatingPlatform myRotatingPlatform = new RotatingPlatform();
@@ -32,13 +33,27 @@ namespace ATDC_V2._0
 
         int count = 0;
         double current = 0;
-        byte[] EVDataArray = new byte[41];
+        double[] EVDataArray = new double[41];
 
         #region 中英文切换字符串
         string stringManualTestStart = (string)System.Windows.Application.Current.FindResource("LangsManualTestStart");
         string stringManualTestStop = (string)System.Windows.Application.Current.FindResource("LangsManualTestStop");
+        string stringCL200ACL200 = (string)System.Windows.Application.Current.FindResource("LangsCL200ACL200");
+        string stringCL500A = (string)System.Windows.Application.Current.FindResource("LangsCL500A");
+        string stringMiniCCRWithoutCommunicationInterface = (string)System.Windows.Application.Current.FindResource("LangsMiniCCRWithoutCommunicationInterface");
+        string stringMiniCCRWithCommunicationInterface = (string)System.Windows.Application.Current.FindResource("LangsMiniCCRWithCommunicationInterface");
+        #endregion
 
-
+        #region 实时刷新中英文字符
+        public void LanguageRefresh()
+        {
+            stringManualTestStart = (string)System.Windows.Application.Current.FindResource("LangsManualTestStart");
+            stringManualTestStop = (string)System.Windows.Application.Current.FindResource("LangsManualTestStop");
+            stringCL200ACL200 = (string)System.Windows.Application.Current.FindResource("LangsCL200ACL200");
+            stringCL500A = (string)System.Windows.Application.Current.FindResource("LangsCL500A");
+            stringMiniCCRWithoutCommunicationInterface = (string)System.Windows.Application.Current.FindResource("LangsMiniCCRWithoutCommunicationInterface");
+            stringMiniCCRWithCommunicationInterface = (string)System.Windows.Application.Current.FindResource("LangsMiniCCRWithCommunicationInterface");
+        }
         #endregion
 
         public ManualTest()
@@ -50,13 +65,27 @@ namespace ATDC_V2._0
         {
             myRotatingPlatform.EVDataEvent += new EVDataHandler(DisplayEVData);
             RotatingPlatformSerialPort.DataReceived += new SerialDataReceivedEventHandler(PortDataReceived);
-            //miniCCRSerialPort.DataReceived += new SerialDataReceivedEventHandler(CCRPortDataReceived);
+            miniCCRSerialPort.DataReceived += new SerialDataReceivedEventHandler(CCRPortDataReceived);
             ManualTimer.Elapsed += new ElapsedEventHandler(QueryEVData);
+            SaveDataProtection.Elapsed += new ElapsedEventHandler(RestoreSetting);            
 
-            
+            if(ConfigurationParameters.sensorModelName==0)
+            {
+                ManualTestSensorModelDisplay.Text = stringCL500A;
+            }
+            else if(ConfigurationParameters.sensorModelName==1)
+            {
+                ManualTestSensorModelDisplay.Text = stringCL200ACL200;
+            }
 
-            ManualTestSensorModelDisplay.Text = ConfigurationParameters.sensorModelName;
-            ManualTestCCRModelDisplay.Text = ConfigurationParameters.miniCCRModelName;
+            if(ConfigurationParameters.miniCCRModelName==0)
+            {
+                ManualTestCCRModelDisplay.Text = stringMiniCCRWithoutCommunicationInterface;
+            }
+            else if(ConfigurationParameters.miniCCRModelName == 1)
+            {
+                ManualTestCCRModelDisplay.Text = stringMiniCCRWithCommunicationInterface;
+            }            
             
         }
 
@@ -70,23 +99,30 @@ namespace ATDC_V2._0
         }
         #endregion
 
-        #region 手动测试下，定时器计时事件的处理函数
+        #region 手动测试下，定时器计时事件的处理函数，用于发送查询EV值指令
         private void QueryEVData(object source,ElapsedEventArgs e)
-        {            
-            OperationStatusRotatingPlatform result = OperationStatusRotatingPlatform.OriginalStatus;
-
-            if (RotatingPlatformSerialPort.IsOpen == false)
+        {
+            if(ConfigurationParameters.sensorModelName== 1)
             {
+                OperationStatusRotatingPlatform result = OperationStatusRotatingPlatform.OriginalStatus;                
                 result = myRotatingPlatform.OpenPort(RotatingPlatformSerialPort, ConfigurationParameters.rotatingPlatformPortName);
+                ManualTestSensorStatusDisplay.Text = result.ToString();
+
+                result = myRotatingPlatform.GetEVxy(RotatingPlatformSerialPort);
+                ManualTestSensorStatusDisplay.Text = result.ToString();
             }
-
-            result = myRotatingPlatform.GetEVxy(RotatingPlatformSerialPort);
-
-            count++;
-            if(count>41)
+            else if(ConfigurationParameters.sensorModelName== 0)
             {
-                ManualTimer.Stop();
-            }
+                //待写
+            }                        
+        }
+        #endregion
+
+        #region 手动测试下，定时器计时事件的处理函数，用于恢复保存数据按钮始能
+        private void RestoreSetting(object source, ElapsedEventArgs e)
+        {
+            ManualTestSaveData.IsEnabled = true;
+            SaveDataProtection.Stop();
         }
         #endregion
 
@@ -94,6 +130,7 @@ namespace ATDC_V2._0
         private void ManualTestGenerateCurve_Click(object sender, RoutedEventArgs e)
         {
             GenerateCurve GenerateCurveWindow = new GenerateCurve();
+            GenerateCurveWindow.EVValue = EVDataArray;
             GenerateCurveWindow.ShowDialog();
         }
 
@@ -107,38 +144,105 @@ namespace ATDC_V2._0
             if (ManualTestStart.Content.ToString()== stringManualTestStart)
             {
                 ManualTestStart.Content = stringManualTestStop;
+                
+                count = 0;
+                current = 6.7;
+                EVDataArray = new double[41];
+
+                ManualTestCountDisplay.Text = count.ToString() + " / 41 ";
+                ManualTestCurrentValueDisplay.Text = current.ToString();
+                ManualTestEVValueDisplay.Text = "";
+
+                if(ConfigurationParameters.miniCCRModelName== 0)
+                {
+                    OperationStatusMiniCCRWithout result = OperationStatusMiniCCRWithout.OriginalStatus;                    
+                    result = myMiniCCRWithoutCommunicationInterface.OpenPort(miniCCRSerialPort, ConfigurationParameters.miniCCRPortName);
+                    ManualTestCCRStatusDisplay.Text = result.ToString();
+
+                    result = myMiniCCRWithoutCommunicationInterface.ConnectCCR(miniCCRSerialPort);                  
+                    ManualTestCCRStatusDisplay.Text = result.ToString();
+                }
+                else if(ConfigurationParameters.miniCCRModelName== 1)
+                {
+                    //待开发
+                }
+
                 ManualTimer.Start();
             }
             else if(ManualTestStart.Content.ToString() == stringManualTestStop)
             {
                 ManualTestStart.Content = stringManualTestStart;
                 ManualTimer.Stop();
-            }
 
-            count = 0;
-            current = 6.7;
-            EVDataArray = new byte[41];
+                if (ConfigurationParameters.miniCCRModelName == 0)
+                {
+                    OperationStatusMiniCCRWithout result = OperationStatusMiniCCRWithout.OriginalStatus;                   
+                    result = myMiniCCRWithoutCommunicationInterface.DisconnectCCR(miniCCRSerialPort);
+                    ManualTestCCRStatusDisplay.Text = result.ToString();
 
-            ManualTestCountDisplay.Text = count.ToString() + " / 41 ";
-            ManualTestCurrentValueDisplay.Text = current.ToString();
-            ManualTestEVValueDisplay.Text = "";
+                    result = myMiniCCRWithoutCommunicationInterface.ClosePort(miniCCRSerialPort);
+                    ManualTestCCRStatusDisplay.Text = result.ToString();
+                }
+                else if (ConfigurationParameters.miniCCRModelName == 1)
+                {
+                    //待开发
+                }
+
+                count = 0;
+                current = 0;
+                EVDataArray = new double[41];
+
+                ManualTestCountDisplay.Text = "";
+                ManualTestCurrentValueDisplay.Text = "";
+                ManualTestEVValueDisplay.Text = "";
+            }            
         }
         #endregion
 
         #region 手动测试下，转台串口接收指令函数
         private void PortDataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            myRotatingPlatform.GetFeedbackCommand(RotatingPlatformSerialPort);
+            OperationStatusRotatingPlatform result = OperationStatusRotatingPlatform.OriginalStatus;
+            result = myRotatingPlatform.GetFeedbackCommand(RotatingPlatformSerialPort);
+
+            this.Dispatcher.Invoke(new System.Action(() =>
+            {
+                ManualTestSensorStatusDisplay.Text = result.ToString();
+            }));
         }
         #endregion
 
-        #region 实时刷新中英文字符
-        public void LanguageRefresh()
+        #region 手动测试下，CCR无通讯协议串口接收指令函数
+        private void CCRPortDataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            stringManualTestStart = (string)System.Windows.Application.Current.FindResource("LangsManualTestStart");
-            stringManualTestStop = (string)System.Windows.Application.Current.FindResource("LangsManualTestStop");
+            OperationStatusMiniCCRWithout result = OperationStatusMiniCCRWithout.OriginalStatus;
+            result = myMiniCCRWithoutCommunicationInterface.AnalysisFeedbackCommand(miniCCRSerialPort);
+
+            this.Dispatcher.Invoke(new System.Action(() =>
+            {
+                ManualTestCCRStatusDisplay.Text = result.ToString();
+            }));
         }
         #endregion
+    
+        #region 保存数据
+        private void ManualTestSaveData_Click(object sender, RoutedEventArgs e)
+        {
+            EVDataArray[count] = Convert.ToDouble(ManualTestEVValueDisplay.Text);
+            count++;
+            current -= 0.1;
 
+            ManualTestCountDisplay.Text = count.ToString() + " / 41 ";
+            ManualTestCurrentValueDisplay.Text = current.ToString();
+
+            if (count==41)
+            {
+                ManualTimer.Stop();
+            }
+
+            ManualTestSaveData.IsEnabled = false;
+            SaveDataProtection.Start();
+        }
+        #endregion
     }
 }
