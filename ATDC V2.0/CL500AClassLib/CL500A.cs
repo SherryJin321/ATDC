@@ -471,11 +471,9 @@ namespace CL500AClassLib
         PollingMeasureFailure,
         GetMeasDataSuccess,
         GetMeasDataFailure,
-
         RemoteOffCloseSuccess,
         RemoteOffCloseFailure,
         CloseSuccess,
         CloseFailure
-
     }
 }

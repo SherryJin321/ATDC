@@ -14,6 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Timers;
 using System.IO.Ports;
+using CL500AClassLib;
+
+using DEVICE_HANDLE = System.IntPtr;
 
 namespace ATDC_V2._0
 {
@@ -27,7 +30,7 @@ namespace ATDC_V2._0
         SerialPort RotatingPlatformSerialPort = new SerialPort();
         SerialPort miniCCRSerialPort = new SerialPort();
         RotatingPlatform myRotatingPlatform = new RotatingPlatform();
-        //缺少CL500A类对象的声明和创建
+        CL500A myCL500A = new CL500A();
         MiniCCRWithoutCommunicationInterface myMiniCCRWithoutCommunicationInterface = new MiniCCRWithoutCommunicationInterface();
         //CCR含通讯协议，目前尚未开发
 
@@ -118,8 +121,84 @@ namespace ATDC_V2._0
             }
             else if(ConfigurationParameters.sensorModelName== 0)
             {
-                //待写
+                CL500AGetEvValue();
             }                        
+        }
+        #endregion
+
+        #region CL500A获取EV值函数
+        public void CL500AGetEvValue()
+        {
+            OperationStatusCL500A result = OperationStatusCL500A.OriginalStatus;
+            DEVICE_HANDLE handle = new DEVICE_HANDLE();
+
+            result = myCL500A.OpenDevice(ref handle);
+            if(result==OperationStatusCL500A.OpenDeviceSuccess)
+            {
+                ShowCL500AStatusDisplay(result);
+                result = myCL500A.SetRemoteMode(handle);
+                if(result==OperationStatusCL500A.SetRemoteModeSuccess)
+                {
+                    ShowCL500AStatusDisplay(result);
+                    int exposurement = 40;
+                    int cumulativenum = 100;
+                    result = myCL500A.DoManualMeasurement(handle, exposurement, cumulativenum);
+                    if(result==OperationStatusCL500A.DoManualMeasurementSuccess)
+                    {
+                        ShowCL500AStatusDisplay(result);
+                        result = myCL500A.PollingMeasure(handle);
+                        if(result==OperationStatusCL500A.PollingMeasureSuccess)
+                        {
+                            ShowCL500AStatusDisplay(result);
+                            float EVData = 0;
+                            result = myCL500A.GetMeasData(handle, ref EVData);
+                            if(result==OperationStatusCL500A.GetMeasDataSuccess)
+                            {
+                                ShowCL500AStatusDisplay(result);
+                                this.Dispatcher.Invoke(new System.Action(() =>
+                                {
+                                    ManualTestEVValueDisplay.Text = EVData.ToString();
+                                }));
+
+                                return;
+                            }
+                            else
+                            {
+                                ShowCL500AStatusDisplay(result);
+                                return;
+                            }
+                        }
+                        else
+                        {
+                            ShowCL500AStatusDisplay(result);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        ShowCL500AStatusDisplay(result);
+                        return;
+                    }
+                }
+                else
+                {
+                    ShowCL500AStatusDisplay(result);
+                    return;
+                }
+            }
+            else
+            {
+                ShowCL500AStatusDisplay(result);
+                return;
+            }
+        }
+
+        public void  ShowCL500AStatusDisplay(OperationStatusCL500A result)
+        {
+            this.Dispatcher.Invoke(new System.Action(() =>
+            {
+                ManualTestSensorStatusDisplay.Text = result.ToString();
+            }));
         }
         #endregion
 

@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:ATDC_V2._0"
       mc:Ignorable="d" 
       d:DesignHeight="557" d:DesignWidth="1000"
-      Title="ManualTest">
+      Title="ManualTest" x:Name="ManualTestPage">
 
     <Grid Loaded="Grid_Loaded">
         <Grid.RowDefinitions>
