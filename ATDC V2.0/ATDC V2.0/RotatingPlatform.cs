@@ -27,7 +27,6 @@ namespace ATDC_V2._0
         {
             OperationStatusRotatingPlatform result = OperationStatusRotatingPlatform.OriginalStatus;  
             
-
             try
             {
                 if (serialPort.IsOpen == false)
@@ -96,11 +95,11 @@ namespace ATDC_V2._0
             if (serialPort.IsOpen == true)
             {
                 serialPort.Write(sendingCommand, 0, 5);
-                result = OperationStatusRotatingPlatform.GetDegreeSuccess;
+                result = OperationStatusRotatingPlatform.TGetDegreeSuccess;
             }
             else
             {
-                result = OperationStatusRotatingPlatform.GetDegreeFailure;
+                result = OperationStatusRotatingPlatform.TGetDegreeFailure;
             }
 
             return result;
@@ -121,11 +120,11 @@ namespace ATDC_V2._0
             if (serialPort.IsOpen == true)
             {
                 serialPort.Write(sendingCommand, 0, 5);
-                result = OperationStatusRotatingPlatform.ResetRotatingPlatformSuccess;
+                result = OperationStatusRotatingPlatform.TResetRotatingPlatformSuccess;
             }
             else
             {
-                result = OperationStatusRotatingPlatform.ResetRotatingPlatformFailure;
+                result = OperationStatusRotatingPlatform.TResetRotatingPlatformFailure;
             }
 
             return result;
@@ -155,11 +154,11 @@ namespace ATDC_V2._0
             if (serialPort.IsOpen == true)
             {
                 serialPort.Write(sendingCommand, 0, 11);
-                result = OperationStatusRotatingPlatform.SetMotorStatusSuccess;
+                result = OperationStatusRotatingPlatform.TSetMotorStatusSuccess;
             }
             else
             {
-                result = OperationStatusRotatingPlatform.SetMotorStatusFailure;
+                result = OperationStatusRotatingPlatform.TSetMotorStatusFailure;
             }
 
             return result;
@@ -182,11 +181,11 @@ namespace ATDC_V2._0
             if (serialPort.IsOpen == true)
             {
                 serialPort.Write(sendingCommand, 0, 6);
-                result = OperationStatusRotatingPlatform.StartMotorSuccess;
+                result = OperationStatusRotatingPlatform.TStartMotorSuccess;
             }
             else
             {
-                result = OperationStatusRotatingPlatform.StartMotorFailure;
+                result = OperationStatusRotatingPlatform.TStartMotorFailure;
             }
 
             return result;
@@ -207,11 +206,11 @@ namespace ATDC_V2._0
             if (serialPort.IsOpen == true)
             {
                 serialPort.Write(sendingCommand, 0, 5);
-                result = OperationStatusRotatingPlatform.ConnectCL200ToPCSuccess;
+                result = OperationStatusRotatingPlatform.TConnectCL200ToPCSuccess;
             }
             else
             {
-                result = OperationStatusRotatingPlatform.ConnectCL200ToPCFailure;
+                result = OperationStatusRotatingPlatform.TConnectCL200ToPCFailure;
             }
 
             return result;
@@ -232,11 +231,11 @@ namespace ATDC_V2._0
             if (serialPort.IsOpen == true)
             {
                 serialPort.Write(sendingCommand, 0, 5);
-                result = OperationStatusRotatingPlatform.GetEVxySuccess;
+                result = OperationStatusRotatingPlatform.TGetEVxySuccess;
             }
             else
             {
-                result = OperationStatusRotatingPlatform.GetEVxyFailure;
+                result = OperationStatusRotatingPlatform.TGetEVxyFailure;
             }
 
             return result;
@@ -303,12 +302,12 @@ namespace ATDC_V2._0
                 }
                 else
                 {
-                    result = OperationStatusRotatingPlatform.FeedbackCommandLengthIsNull;
+                    result = OperationStatusRotatingPlatform.RLengthIsNull;
                 }
             }
             else
             {
-                result = OperationStatusRotatingPlatform.FeedbackCommandSerialPortFailure;
+                result = OperationStatusRotatingPlatform.RSerialPortFailure;
             }
 
             return result;
@@ -366,43 +365,43 @@ namespace ATDC_V2._0
                     Coordinates xy = new Coordinates();
                     xy = GetCoordinates(receivedData);
                     xyDataEvent(xy);
-                    result = OperationStatusRotatingPlatform.FeedbackCommandFunction45Success;
+                    result = OperationStatusRotatingPlatform.RGetDegreeSuccess;
                 }
                 else if(receivedData[2]==0x51)
                 {
-                    result = OperationStatusRotatingPlatform.FeedbackCommandFunction51Success;
+                    result = OperationStatusRotatingPlatform.RResetRotatingPlatformSuccess;
                 }
                 else if(receivedData[2]==0xA1)
                 {
-                    result = OperationStatusRotatingPlatform.FeedbackCommandFunctionA1Success;
+                    result = OperationStatusRotatingPlatform.RArriveLocationSuccess;
                 }
                 else if(receivedData[2]==0x40)
                 {
-                    result = OperationStatusRotatingPlatform.FeedbackCommandFunction40Success;
+                    result = OperationStatusRotatingPlatform.RSetMotorStatusSuccess;
                 }
                 else if(receivedData[2]==0x42)
                 {
-                    result = OperationStatusRotatingPlatform.FeedbackCommandFunction42Success;
+                    result = OperationStatusRotatingPlatform.RStartMotorSuccess;
                 }
                 else if(receivedData[2]==0x34)
                 {
-                    result = OperationStatusRotatingPlatform.FeedbackCommandFunction34Success;
+                    result = OperationStatusRotatingPlatform.RConnectCL200ToPCSuccess;
                 }
                 else if(receivedData[2]==0xA3)
                 {
                     double EV = GetEV(receivedData);
                     EVDataEvent(EV);
-                    result = OperationStatusRotatingPlatform.FeedbackCommandFunctionA3Success;
+                    result = OperationStatusRotatingPlatform.RGetEVxySuccess;
 
                 }
                 else
                 {
-                    result = OperationStatusRotatingPlatform.FeedbackCommandFunctionCodeError;
+                    result = OperationStatusRotatingPlatform.RFunctionCodeError;
                 }
             }
             else
             {
-                result = OperationStatusRotatingPlatform.FeedbackCommandCHKError;
+                result = OperationStatusRotatingPlatform.RCHKError;
             }
 
             return result;
@@ -502,29 +501,29 @@ namespace ATDC_V2._0
         OpenPortFailure,
         ClosePortSuccess,
         ClosePortFailure,
-        GetDegreeSuccess,
-        GetDegreeFailure,
-        ResetRotatingPlatformSuccess,
-        ResetRotatingPlatformFailure,
-        SetMotorStatusSuccess,
-        SetMotorStatusFailure,
-        StartMotorSuccess,
-        StartMotorFailure,
-        ConnectCL200ToPCSuccess,
-        ConnectCL200ToPCFailure,
-        GetEVxySuccess,
-        GetEVxyFailure,
-        FeedbackCommandCHKError,
-        FeedbackCommandFunctionCodeError,
-        FeedbackCommandFunction45Success,
-        FeedbackCommandFunction51Success,
-        FeedbackCommandFunctionA1Success,
-        FeedbackCommandFunction40Success,
-        FeedbackCommandFunction42Success,
-        FeedbackCommandFunction34Success,
-        FeedbackCommandFunctionA3Success,
-        FeedbackCommandSerialPortFailure,
-        FeedbackCommandLengthIsNull,
+        TGetDegreeSuccess,
+        TGetDegreeFailure,
+        TResetRotatingPlatformSuccess,
+        TResetRotatingPlatformFailure,
+        TSetMotorStatusSuccess,
+        TSetMotorStatusFailure,
+        TStartMotorSuccess,
+        TStartMotorFailure,
+        TConnectCL200ToPCSuccess,
+        TConnectCL200ToPCFailure,
+        TGetEVxySuccess,
+        TGetEVxyFailure,
+        RCHKError,
+        RFunctionCodeError,
+        RGetDegreeSuccess,
+        RResetRotatingPlatformSuccess,
+        RArriveLocationSuccess,
+        RSetMotorStatusSuccess,
+        RStartMotorSuccess,
+        RConnectCL200ToPCSuccess,
+        RGetEVxySuccess,
+        RSerialPortFailure,
+        RLengthIsNull,
         OriginalStatus
     }
 }

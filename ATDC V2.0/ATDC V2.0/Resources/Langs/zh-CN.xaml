@@ -90,6 +90,8 @@
     <system:String x:Key="LangsManualTestStop">停止测试</system:String>
     <system:String x:Key="LangsManualTestSaveData">保存数据</system:String>
     <system:String x:Key="LangsManualTestGenerateCurve">调光曲线</system:String>
+    <system:String x:Key="LangsCloseManualTestPage">关闭</system:String>
+
 
 
     <!--前台代码，自动测试 页面-->

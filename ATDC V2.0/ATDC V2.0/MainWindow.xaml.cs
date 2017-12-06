@@ -79,7 +79,8 @@ namespace ATDC_V2._0
 
         #region 打开 手动测试 页面
         private void FunctionsSubMenuManualTest_Click(object sender, RoutedEventArgs e)
-        {            
+        {
+
             this.SwitchPage.Navigate(new Uri("ManualTest.xaml", UriKind.Relative));
         }
         #endregion
@@ -94,12 +95,6 @@ namespace ATDC_V2._0
 
         #endregion
 
-        private void SubMenuConnect_Click(object sender, RoutedEventArgs e)
-        {
-            Window win = (Window)this.Parent;
-            win.Close();
-
-
-        }
+        
     }
 }

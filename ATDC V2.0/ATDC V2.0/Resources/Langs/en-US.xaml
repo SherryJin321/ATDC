@@ -89,6 +89,8 @@
     <system:String x:Key="LangsManualTestStop">Stop Test</system:String>
     <system:String x:Key="LangsManualTestSaveData">Save Data</system:String>
     <system:String x:Key="LangsManualTestGenerateCurve">Dimming Curve</system:String>
+    <system:String x:Key="LangsCloseManualTestPage">Close</system:String>
+
 
 
     <!--前台代码，自动测试 页面-->

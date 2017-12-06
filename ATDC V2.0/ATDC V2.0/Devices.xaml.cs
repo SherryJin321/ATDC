@@ -77,10 +77,10 @@ namespace ATDC_V2._0
         #region 获取全局变量
         public void GetGlobalParameters()
         {
-            ConfigurationParameters.miniCCRModelName = MiniCCRModelSelect.SelectedIndex;
+            ConfigurationParameters.miniCCRModelName = MiniCCRModelSelect.SelectedIndex+1;
             ConfigurationParameters.miniCCRPortName = MiniCCRPortSelect.SelectedItem.ToString();
             ConfigurationParameters.rotatingPlatformPortName = RotatingPlatformPortSelect.SelectedItem.ToString();
-            ConfigurationParameters.sensorModelName = SensorModelSelect.SelectedIndex;
+            ConfigurationParameters.sensorModelName = SensorModelSelect.SelectedIndex+1;
         }
         #endregion
 

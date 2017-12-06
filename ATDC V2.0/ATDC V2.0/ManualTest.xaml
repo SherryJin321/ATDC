@@ -43,14 +43,17 @@
         <Label Content="{DynamicResource LangsManualTestEVValue}" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="510,355,0,0" FontSize="16"/>
         <Border Grid.Row="1" Width="150" Height="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,380,0,0" BorderBrush="Gray" BorderThickness="1"/>
         <TextBlock x:Name="ManualTestEVValueDisplay" Grid.Row="1" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="650,355,0,0" Padding="0,6,0,0" FontSize="16" TextAlignment="Center"/>
-        <Border Grid.Row="5" Width="180" Height="60" Margin="150,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
+        <Border Grid.Row="1" Width="180" Height="60" Margin="150,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
             <Button x:Name="ManualTestStart" Content="{DynamicResource LangsManualTestStart}" Width="180" Height="60" Background="{x:Null}" BorderThickness="0" FontSize="22" Click="ManualTestStart_Click"/>
         </Border>
-        <Border Grid.Row="5" Width="180" Height="60" Margin="150,160,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
+        <Border Grid.Row="1" Width="180" Height="60" Margin="150,160,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
             <Button x:Name="ManualTestSaveData" Content="{DynamicResource LangsManualTestSaveData}" Width="180" Height="60" Background="{x:Null}" BorderThickness="0" FontSize="22" Click="ManualTestSaveData_Click"/>
         </Border>
-        <Border Grid.Row="5" Width="180" Height="60" Margin="150,260,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
+        <Border Grid.Row="1" Width="180" Height="60" Margin="150,260,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
             <Button x:Name="ManualTestGenerateCurve" Content="{DynamicResource LangsManualTestGenerateCurve}" Width="180" Height="60" Background="{x:Null}" BorderThickness="0" FontSize="22" Click="ManualTestGenerateCurve_Click" />
+        </Border>
+        <Border Grid.Row="1" Width="130" Height="40" Margin="0,0,10,10" HorizontalAlignment="Right" VerticalAlignment="Bottom" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
+            <Button x:Name="CloseManualTestPage" Content="{DynamicResource LangsCloseManualTestPage}" Width="130" Height="40" Background="{x:Null}" BorderThickness="0" FontSize="16" Click="CloseManualTestPage_Click" />
         </Border>
     </Grid>
 </Page>

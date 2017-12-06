@@ -18,7 +18,7 @@
         </Grid.RowDefinitions>
 
         <Menu x:Name="MainMenu" Height="40" VerticalAlignment="Top" Background="White" FontSize="18" Margin="10,0,0,0" Padding="8,8,0,0" HorizontalAlignment="Left" Grid.Row="0">
-            <MenuItem x:Name="SubMenuConnect" Header="{DynamicResource LangsSubMenuConnect}" Padding="15,4,15,4" Click="SubMenuConnect_Click" >
+            <MenuItem x:Name="SubMenuConnect" Header="{DynamicResource LangsSubMenuConnect}" Padding="15,4,15,4" >
                 <MenuItem x:Name="ConnectSubMenuDevices" Header="{DynamicResource LangsConnectSubMenuDevices}" Background="White" Padding="0,4,0,4" Click="ConnectSubMenuDevices_Click" />
             </MenuItem>
             <MenuItem x:Name="SubMenuFunctions" Header="{DynamicResource LangsSubMenuFunctions}" Padding="15,4,15,4">
