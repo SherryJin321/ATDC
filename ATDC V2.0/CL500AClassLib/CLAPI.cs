@@ -11,7 +11,7 @@ using DEVICE_HANDLE = System.IntPtr;
 
 
 
-namespace CL_500ATest
+namespace CL500AClassLib
 {
     class CLAPI
     {

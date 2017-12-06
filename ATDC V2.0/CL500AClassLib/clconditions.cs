@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 
 
 
-namespace CL_500ATest
+namespace CL500AClassLib
 {
-     class clconditions
+     public class clconditions
     {        
         //===========================
         // The definition value

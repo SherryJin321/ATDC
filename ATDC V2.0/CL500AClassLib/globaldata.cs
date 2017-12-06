@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CL_500ATest
+namespace CL500AClassLib
 {
     class globaldata
     {

@@ -203,7 +203,7 @@ namespace ATDC_V2._0
 
     }
 
-    enum OperationStatusMiniCCRWithout
+    public enum OperationStatusMiniCCRWithout
     {
         OpenPortSuccess,
         OpenPortFailure,
