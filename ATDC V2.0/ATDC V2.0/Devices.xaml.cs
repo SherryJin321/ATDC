@@ -178,7 +178,7 @@ namespace ATDC_V2._0
         public void ResultAnalysisRotatingPlatform()
         {
 
-            if (myOperationStatusRotatingPlatform == OperationStatusRotatingPlatform.FeedbackCommandFunction34Success)
+            if (myOperationStatusRotatingPlatform == OperationStatusRotatingPlatform.RConnectCL200ToPCSuccess)
             {
                 ConnectStatusRotatingPlatform.Content = DeviceConnectSuccess;
                 if(SensorModelSelect.SelectedIndex == 1)
