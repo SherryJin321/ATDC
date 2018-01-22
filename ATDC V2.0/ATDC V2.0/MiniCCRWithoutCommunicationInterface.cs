@@ -86,11 +86,11 @@ namespace ATDC_V2._0
             if(serialPort.IsOpen==true)
             {
                 serialPort.Write(sendingCommand, 0, 8);
-                result = OperationStatusMiniCCRWithout.ConnectCCRSuccess;
+                result = OperationStatusMiniCCRWithout.TConnectCCRSuccess;
             }
             else
             {
-                result = OperationStatusMiniCCRWithout.ConnectCCRFailure;
+                result = OperationStatusMiniCCRWithout.TConnectCCRFailure;
             }
 
             return result;
@@ -110,11 +110,11 @@ namespace ATDC_V2._0
             if(serialPort.IsOpen==true)
             {
                 serialPort.Write(sendingCommand, 0, 8);
-                result = OperationStatusMiniCCRWithout.DisconnectCCRSuccess;
+                result = OperationStatusMiniCCRWithout.TDisconnectCCRSuccess;
             }
             else
             {
-                result = OperationStatusMiniCCRWithout.DisconnectCCRFailure;
+                result = OperationStatusMiniCCRWithout.TDisconnectCCRFailure;
             }
 
             return result;
@@ -134,11 +134,11 @@ namespace ATDC_V2._0
             if(serialPort.IsOpen==true)
             {
                 serialPort.Write(sendingCommand, 0, 8);
-                result = OperationStatusMiniCCRWithout.EnquiryStatusSuccess;
+                result = OperationStatusMiniCCRWithout.TEnquiryStatusSuccess;
             }
             else
             {
-                result = OperationStatusMiniCCRWithout.EnquiryStatusFailure;
+                result = OperationStatusMiniCCRWithout.TEnquiryStatusFailure;
             }
 
             return result;
@@ -162,40 +162,40 @@ namespace ATDC_V2._0
                 {
                     if(receivedData[0] == 0xFE && receivedData[1] == 0x01 && receivedData[2] == 0x01 && receivedData[3] == 0x00 && receivedData[4] == 0x61 && receivedData[5] == 0x9C)
                     {
-                        result = OperationStatusMiniCCRWithout.AnalysisFeedbackCommandEnquiryStatusCCROffSuccess;
+                        result = OperationStatusMiniCCRWithout.REnquiryStatusCCROffSuccess;
                     }
                     else if(receivedData[0] == 0xFE && receivedData[1] == 0x01 && receivedData[2] == 0x01 && receivedData[3] == 0x01 && receivedData[4] == 0xA0 && receivedData[5] == 0x5C)
                     {
-                        result = OperationStatusMiniCCRWithout.AnalysisFeedbackCommandEnquiryStatusCCROnSuccess;
+                        result = OperationStatusMiniCCRWithout.REnquiryStatusCCROnSuccess;
                     }
                     else
                     {
-                        result = OperationStatusMiniCCRWithout.AnalysisFeedbackCommandEnquiryStatusFailure;
+                        result = OperationStatusMiniCCRWithout.REnquiryStatusFailure;
                     }
                 }
                 else if(receivedData.Length==8)
                 {
                     if (receivedData[0] == 0xFE && receivedData[1] == 0x05 && receivedData[2] == 0x00 && receivedData[3] == 0x00 && receivedData[4] == 0xFF && receivedData[5] == 0x00 && receivedData[6] == 0x98 && receivedData[7] == 0x35)
                     {
-                        result = OperationStatusMiniCCRWithout.AnalysisFeedbackCommandConnectCCRSuccess;
+                        result = OperationStatusMiniCCRWithout.RConnectCCRSuccess;
                     }
                     else if (receivedData[0] == 0xFE && receivedData[1] == 0x05 && receivedData[2] == 0x00 && receivedData[3] == 0x00 && receivedData[4] == 0x00 && receivedData[5] == 0x00 && receivedData[6] == 0xD9 && receivedData[7] == 0xC5)
                     {
-                        result = OperationStatusMiniCCRWithout.AnalysisFeedbackCommandDisconnectCCRSuccess;
+                        result = OperationStatusMiniCCRWithout.RDisconnectCCRSuccess;
                     }
                     else
                     {
-                        result = OperationStatusMiniCCRWithout.AnalysisFeedbackCommandDisconnectOrConnectCCRFailure;
+                        result = OperationStatusMiniCCRWithout.RDisconnectOrConnectCCRFailure;
                     }
                 }
                 else
                 {
-                    result = OperationStatusMiniCCRWithout.AnalysisFeedbackCommandLengthFailure;
+                    result = OperationStatusMiniCCRWithout.RCommandLengthFailure;
                 }                
             }
             else
             {
-                result = OperationStatusMiniCCRWithout.AnalysisFeedbackCommandSerialPortFailure;
+                result = OperationStatusMiniCCRWithout.RSerialPortFailure;
             }
 
             return result;
@@ -209,20 +209,20 @@ namespace ATDC_V2._0
         OpenPortFailure,
         ClosePortSuccess,
         ClosePortFailure,
-        ConnectCCRSuccess,
-        ConnectCCRFailure,
-        DisconnectCCRSuccess,
-        DisconnectCCRFailure,
-        EnquiryStatusSuccess,
-        EnquiryStatusFailure,
-        AnalysisFeedbackCommandSerialPortFailure,
-        AnalysisFeedbackCommandLengthFailure,
-        AnalysisFeedbackCommandEnquiryStatusCCROffSuccess,
-        AnalysisFeedbackCommandEnquiryStatusCCROnSuccess,
-        AnalysisFeedbackCommandEnquiryStatusFailure,
-        AnalysisFeedbackCommandConnectCCRSuccess,
-        AnalysisFeedbackCommandDisconnectCCRSuccess,
-        AnalysisFeedbackCommandDisconnectOrConnectCCRFailure,
+        TConnectCCRSuccess,
+        TConnectCCRFailure,
+        TDisconnectCCRSuccess,
+        TDisconnectCCRFailure,
+        TEnquiryStatusSuccess,
+        TEnquiryStatusFailure,
+        RSerialPortFailure,
+        RCommandLengthFailure,
+        REnquiryStatusCCROffSuccess,
+        REnquiryStatusCCROnSuccess,
+        REnquiryStatusFailure,
+        RConnectCCRSuccess,
+        RDisconnectCCRSuccess,
+        RDisconnectOrConnectCCRFailure,
         OriginalStatus
     }
 }

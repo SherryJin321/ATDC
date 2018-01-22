@@ -339,3 +339,14 @@ C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.csprojResolveAssemblyRef
 C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.Form1.resources
 C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.Properties.Resources.resources
 C:\Users\JXY\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\Jin\Source\Repos\ATDC\ATDC\ATDC\bin\Debug\ATDC.exe.config
+C:\Users\Jin\Source\Repos\ATDC\ATDC\ATDC\bin\Debug\ATDC.exe
+C:\Users\Jin\Source\Repos\ATDC\ATDC\ATDC\bin\Debug\ATDC.pdb
+C:\Users\Jin\Source\Repos\ATDC\ATDC\ATDC\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\Jin\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.csprojResolveAssemblyReference.cache
+C:\Users\Jin\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.csproj.ResolveComReference.cache
+C:\Users\Jin\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.Form1.resources
+C:\Users\Jin\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.Properties.Resources.resources
+C:\Users\Jin\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.csproj.GenerateResource.Cache
+C:\Users\Jin\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.exe
+C:\Users\Jin\Source\Repos\ATDC\ATDC\ATDC\obj\Debug\ATDC.pdb
