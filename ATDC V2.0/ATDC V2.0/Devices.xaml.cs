@@ -51,6 +51,12 @@ namespace ATDC_V2._0
             RotatingPlatformPortSelect.SelectedIndex = portNames.Length - 1;
             MiniCCRPortSelect.ItemsSource = portNames;    
             MiniCCRPortSelect.SelectedIndex = portNames.Length - 1;
+
+            SerialPortMiniCCRWithout.DataReceived += new SerialDataReceivedEventHandler(SerialPortMiniCCRWithout_DateReceived);
+            SerialPortRotatingPlatform.DataReceived += new SerialDataReceivedEventHandler(SerialPortRotatingPlatform_DateReceived);
+            SerialPortCL200A.DataReceived += new SerialDataReceivedEventHandler(SerialPortCL200A_DateReceived);
+
+
         }
 
         #region 转台串口设置
@@ -109,7 +115,7 @@ namespace ATDC_V2._0
         {
             RefreshLanguageString();
 
-            if (MiniCCRModelSelect.SelectedIndex==0)
+            if (MiniCCRModelSelect.SelectedIndex == 0)
             {
                 ConnectMiniCCRWithoutCommunicationInterface();
             }
@@ -118,7 +124,7 @@ namespace ATDC_V2._0
                 //待Mini CCR增加通讯功能后使用
             }
 
-            if(SensorModelSelect.SelectedIndex==0)
+            if (SensorModelSelect.SelectedIndex == 0)
             {
                 ConnectCL500A();
             }
@@ -126,11 +132,13 @@ namespace ATDC_V2._0
             {
                 ConnectCL200A();
             }
-            
+
             ConnectRotatingPlatform();
 
             GetGlobalParameters();
         }
+
+      
 
         #region MiniCCR不含通讯，设备连接
         SerialPort SerialPortMiniCCRWithout = new SerialPort();
@@ -139,23 +147,22 @@ namespace ATDC_V2._0
 
         public void ConnectMiniCCRWithoutCommunicationInterface()
         {
-            if(MiniCCRPortSelect.SelectedIndex==-1)
+            myOperationStatusMiniCCRWithout = OperationStatusMiniCCRWithout.OriginalStatus;
+
+            if (MiniCCRPortSelect.SelectedIndex==-1)
             {
                 ConnectStatusMiniCCR.Content = DeviceConnectFailure;
             }
             else
             {
-                SerialPortMiniCCRWithout.DataReceived += new SerialDataReceivedEventHandler(SerialPortMiniCCRWithout_DateReceived);
-
                 string portName = MiniCCRPortSelect.SelectedItem.ToString();
                 myOperationStatusMiniCCRWithout = myMiniCCRWithoutCommunicationInterface.OpenPort(SerialPortMiniCCRWithout, portName);
                 myOperationStatusMiniCCRWithout = myMiniCCRWithoutCommunicationInterface.EnquiryStatus(SerialPortMiniCCRWithout);
 
-                Thread.Sleep(50);
+                Thread.Sleep(1000);
                 ResultAnalysisConnectMiniCCRWithout();
                 myMiniCCRWithoutCommunicationInterface.ClosePort(SerialPortMiniCCRWithout);
             }
-            
         }
 
         private void SerialPortMiniCCRWithout_DateReceived(object sender, SerialDataReceivedEventArgs e)
@@ -165,7 +172,7 @@ namespace ATDC_V2._0
 
         public void ResultAnalysisConnectMiniCCRWithout()
         {
-            if(myOperationStatusMiniCCRWithout==OperationStatusMiniCCRWithout.REnquiryStatusCCROffSuccess||myOperationStatusMiniCCRWithout==OperationStatusMiniCCRWithout.REnquiryStatusCCROnSuccess)
+            if (myOperationStatusMiniCCRWithout == OperationStatusMiniCCRWithout.REnquiryStatusCCROffSuccess || myOperationStatusMiniCCRWithout == OperationStatusMiniCCRWithout.REnquiryStatusCCROnSuccess)
             {
                 ConnectStatusMiniCCR.Content = DeviceConnectSuccess;
             }
@@ -183,14 +190,14 @@ namespace ATDC_V2._0
 
         public void ConnectRotatingPlatform()
         {
-            if(RotatingPlatformPortSelect.SelectedIndex==-1)
-            {
-                ConnectStatusRotatingPlatform.Content = DeviceConnectFailure;
+            myOperationStatusRotatingPlatform = OperationStatusRotatingPlatform.OriginalStatus;
+
+            if (RotatingPlatformPortSelect.SelectedIndex==-1)
+            {                              
+                 ConnectStatusRotatingPlatform.Content = DeviceConnectFailure;               
             }
             else
             {
-                SerialPortRotatingPlatform.DataReceived += new SerialDataReceivedEventHandler(SerialPortRotatingPlatform_DateReceived);
-
                 string portName = RotatingPlatformPortSelect.SelectedItem.ToString();
                 myOperationStatusRotatingPlatform = myRotatingPlatform.OpenPort(SerialPortRotatingPlatform, portName);
                 myOperationStatusRotatingPlatform = myRotatingPlatform.SetMotorStatus(SerialPortRotatingPlatform, 0, 0, 0, 0);
@@ -198,7 +205,7 @@ namespace ATDC_V2._0
                 Thread.Sleep(1000);
                 ResultAnalysisRotatingPlatform();
                 myRotatingPlatform.ClosePort(SerialPortRotatingPlatform);
-            }            
+            }
         }
 
         private void SerialPortRotatingPlatform_DateReceived(object sender, SerialDataReceivedEventArgs e)
@@ -210,11 +217,11 @@ namespace ATDC_V2._0
         {
             if (myOperationStatusRotatingPlatform == OperationStatusRotatingPlatform.RSetMotorStatusSuccess)
             {
-                ConnectStatusRotatingPlatform.Content = DeviceConnectSuccess;                
+                ConnectStatusRotatingPlatform.Content = DeviceConnectSuccess;
             }
             else
             {
-                ConnectStatusRotatingPlatform.Content = DeviceConnectFailure;                
+                ConnectStatusRotatingPlatform.Content = DeviceConnectFailure;
             }
         }
 
@@ -227,14 +234,14 @@ namespace ATDC_V2._0
 
         public void ConnectCL200A()
         {
-            if(RotatingPlatformPortSelect.SelectedIndex==-1)
-            {
-                ConnectStatusSensor.Content = DeviceConnectFailure;
+            myOperationStatusCL200A = OperationStatusRotatingPlatform.OriginalStatus;
+
+            if (RotatingPlatformPortSelect.SelectedIndex==-1)
+            {                                
+                ConnectStatusSensor.Content = DeviceConnectFailure;               
             }
             else
             {
-                SerialPortCL200A.DataReceived += new SerialDataReceivedEventHandler(SerialPortCL200A_DateReceived);
-
                 string portName = RotatingPlatformPortSelect.SelectedItem.ToString();
                 myOperationStatusCL200A = myCL200A.OpenPort(SerialPortCL200A, portName);
                 myOperationStatusCL200A = myCL200A.ConnectCL200ToPC(SerialPortCL200A);
@@ -242,7 +249,7 @@ namespace ATDC_V2._0
                 Thread.Sleep(1000);
                 ResultAnalysisCL200A();
                 myCL200A.ClosePort(SerialPortCL200A);
-            }            
+            }
         }
 
         private void SerialPortCL200A_DateReceived(object sender, SerialDataReceivedEventArgs e)
@@ -253,12 +260,12 @@ namespace ATDC_V2._0
         public void ResultAnalysisCL200A()
         {
             if (myOperationStatusCL200A == OperationStatusRotatingPlatform.RConnectCL200ToPCSuccess)
-            {                
-                ConnectStatusSensor.Content = DeviceConnectSuccess;               
+            {
+                ConnectStatusSensor.Content = DeviceConnectSuccess;
             }
             else
-            {               
-                ConnectStatusSensor.Content = DeviceConnectFailure;               
+            {
+                ConnectStatusSensor.Content = DeviceConnectFailure;
             }
         }
 

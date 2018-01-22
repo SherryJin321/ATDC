@@ -187,10 +187,10 @@ namespace ATDC_V2._0
                     {
                         result = OperationStatusMiniCCRWithout.RDisconnectOrConnectCCRFailure;
                     }
-                }
+                }                
                 else
                 {
-                    result = OperationStatusMiniCCRWithout.RCommandLengthFailure;
+                    result = OperationStatusMiniCCRWithout.RCommandLengthFailure;  
                 }                
             }
             else
@@ -224,5 +224,6 @@ namespace ATDC_V2._0
         RDisconnectCCRSuccess,
         RDisconnectOrConnectCCRFailure,
         OriginalStatus
+        
     }
 }
