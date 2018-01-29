@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using CL500AClassLib;
 using DEVICE_HANDLE = System.IntPtr;
+using System.Threading;
 
 namespace ATDC_V2._0
 {
@@ -66,10 +67,15 @@ namespace ATDC_V2._0
         #endregion
 
         #region CL-500A 零校正操作
+        Thread ZeroCalibrationThread;
         private void ZeroCalibrationDo_Click(object sender, RoutedEventArgs e)
         {
             LanguageRefresh();
-            CL500AZeroCalibration();
+
+            ZeroCalibrationThread = new Thread(new ThreadStart(CL500AZeroCalibration));
+
+            ZeroCalibrationThread.Start();
+            
         }
 
         public void CL500AZeroCalibration()
@@ -93,6 +99,7 @@ namespace ATDC_V2._0
                         if(result==OperationStatusCL500A.PollingCalibrationSuccess)
                         {
                             ShowCL500AStatusDisplay(stringCL500AZeroCalibrationSuccess);
+                            myCL500A.RemoteOffClose(handle);
                             return;
                         }
                         else
@@ -118,12 +125,17 @@ namespace ATDC_V2._0
                 ShowCL500AStatusDisplay(stringCL500AZeroCalibrationFailure);
                 return;
             }
+
+            ZeroCalibrationThread.Abort();
         }
 
 
         public void ShowCL500AStatusDisplay(string status)
         {
-            ZeroCalibrationStatusContent.Text = status;
+            this.Dispatcher.Invoke(new System.Action(() =>
+            {
+                ZeroCalibrationStatusContent.Text = status;
+            }));            
         }
         #endregion
     }
