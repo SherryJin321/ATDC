@@ -145,4 +145,13 @@
     <system:String x:Key="LangsDimmingCurveChartHeaderWhite">Dimming Curve Chart (White Light Only)</system:String>
     <system:String x:Key="LangsDimmingCurveChartHeaderNotWhite">Dimming Curve Chart (Colored Light Only)</system:String>
 
+    <!--后台代码，设备 页面-->
+    <system:String x:Key="LangsDeviceConnectSuccess">Success</system:String>
+    <system:String x:Key="LangsDeviceConnectFailure">Failure</system:String>
+
+    <!--后台代码，零校正（CL-500A） 页面-->
+    <system:String x:Key="LangsCL500AZeroCalibrationDoing">Doing zero calibration right now.</system:String>
+    <system:String x:Key="LangsCL500AZeroCalibrationSuccess">Zero calibration success.</system:String>
+    <system:String x:Key="LangsCL500AZeroCalibrationFailure">Zero calibration failure.</system:String>
+
 </ResourceDictionary>

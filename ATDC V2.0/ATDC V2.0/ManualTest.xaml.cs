@@ -26,7 +26,7 @@ namespace ATDC_V2._0
     public partial class ManualTest : Page
     {
         Timer ManualTimer = new Timer(1000);
-        Timer SaveDataProtection = new Timer(100);
+        Timer SaveDataProtection = new Timer(2000);
         SerialPort RotatingPlatformSerialPort = new SerialPort();
         SerialPort miniCCRSerialPort = new SerialPort();
         RotatingPlatform myRotatingPlatform = new RotatingPlatform();
@@ -93,6 +93,9 @@ namespace ATDC_V2._0
                 {
                     ManualTestCCRModelDisplay.Text = stringMiniCCRWithCommunicationInterface;
                 }
+
+                ManualTestSaveData.IsEnabled = false;
+                ManualTestGenerateCurve.IsEnabled = false;
             }
             else
             {
@@ -122,6 +125,7 @@ namespace ATDC_V2._0
                 {
                     ManualTestSensorStatusDisplay.Text = result.ToString();
                 }));
+
             }
             if(ConfigurationParameters.sensorModelName== 1)
             {
@@ -269,7 +273,7 @@ namespace ATDC_V2._0
             {
                 ManualTestStart.Content = stringManualTestStart;
                 ManualTimer.Stop();
-                ManualTestSaveData.IsEnabled=true;
+                ManualTestSaveData.IsEnabled=false;
                 ManualTestGenerateCurve.IsEnabled = false;
 
                 ManualTestSensorStatusDisplay.Text = "";
@@ -286,6 +290,11 @@ namespace ATDC_V2._0
                 else if (ConfigurationParameters.miniCCRModelName == 2)
                 {
                     //待开发
+                }
+
+                if (ConfigurationParameters.sensorModelName == 2)
+                {
+                    myRotatingPlatform.ClosePort(RotatingPlatformSerialPort);
                 }
 
                 count = 0;
@@ -353,6 +362,11 @@ namespace ATDC_V2._0
 
                 ManualTimer.Stop();
 
+                if(ConfigurationParameters.sensorModelName == 2)
+                {
+                    myRotatingPlatform.ClosePort(RotatingPlatformSerialPort);
+                }
+
                 ManualTestStart.Content = stringManualTestStart;
                 ManualTestGenerateCurve.IsEnabled = true;
                 ManualTestSaveData.IsEnabled = false;                
@@ -366,7 +380,7 @@ namespace ATDC_V2._0
             //Window win = new Window();
             //win = (Window)this.Parent;
             //win.Close();
-
+            
             this.Visibility = Visibility.Collapsed;
         }
         #endregion
