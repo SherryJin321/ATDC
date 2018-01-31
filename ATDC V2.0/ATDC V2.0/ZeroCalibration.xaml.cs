@@ -44,6 +44,7 @@ namespace ATDC_V2._0
         public ZeroCalibration()
         {
             InitializeComponent();
+
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
