@@ -35,9 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CL500AClassLib">
-      <HintPath>..\CL500AClassLib\bin\Debug\CL500AClassLib.dll</HintPath>
-    </Reference>
     <Reference Include="DynamicDataDisplay, Version=0.3.0.0, Culture=neutral, PublicKeyToken=5b7d744a7263923f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DynamicDataDisplay.dll</HintPath>
@@ -197,6 +194,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Enquiry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CL500AClassLib\CL500AClassLib.csproj">
+      <Project>{153c7ec5-5970-4900-905c-4cd0fbd4eed9}</Project>
+      <Name>CL500AClassLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

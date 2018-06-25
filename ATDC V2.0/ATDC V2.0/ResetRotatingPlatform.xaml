@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ATDC_V2._0"
         mc:Ignorable="d"
-        Title="{DynamicResource LangsSetRotatingPlatformPage}" Height="570" Width="490" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+        Title="{DynamicResource LangsSetRotatingPlatformPage}" Height="600" Width="490" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -13,36 +13,38 @@
         </Grid.RowDefinitions>
         <Label Content="{DynamicResource LangsSetRotatingPlatformMotorControl}" FontSize="16" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
         <Border Grid.Row="0" Width="130" Height="40" Margin="170,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
-            <Button x:Name="ResetRotatingPlatformUp" Content="{DynamicResource LangsSetRotatingPlatformUp}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}"/>
+            <Button x:Name="ResetRotatingPlatformUp" Content="{DynamicResource LangsSetRotatingPlatformUp}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" Click="ResetRotatingPlatformUp_Click"/>
         </Border>
         <Border Grid.Row="0" Width="130" Height="2" Margin="170,70,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1"/>
         <TextBox x:Name="ResetRotatingPlatformUpContent" Text="500" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" TextAlignment="Center" Padding="0,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170,30,0,0"/>
         <Border Grid.Row="0" Width="130" Height="40" Margin="10,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
-            <Button x:Name="ResetRotatingPlatformLeft" Content="{DynamicResource LangsSetRotatingPlatformLeft}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}"/>
+            <Button x:Name="ResetRotatingPlatformLeft" Content="{DynamicResource LangsSetRotatingPlatformLeft}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" Click="ResetRotatingPlatformLeft_Click"/>
         </Border>
         <Border Grid.Row="0" Width="130" Height="2" Margin="10,170,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1"/>
         <TextBox x:Name="ResetRotatingPlatformLeftContent" Text="500" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" TextAlignment="Center" Padding="0,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130,0,0"/>
         <Border Grid.Row="0" Width="130" Height="40" Margin="330,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
-            <Button x:Name="ResetRotatingPlatformRight" Content="{DynamicResource LangsSetRotatingPlatformRight}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}"/>
+            <Button x:Name="ResetRotatingPlatformRight" Content="{DynamicResource LangsSetRotatingPlatformRight}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" Click="ResetRotatingPlatformRight_Click"/>
         </Border>
         <Border Grid.Row="0" Width="130" Height="2" Margin="330,170,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1"/>
         <TextBox x:Name="ResetRotatingPlatformRightContent" Text="500" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" TextAlignment="Center" Padding="0,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,130,0,0"/>
         <Border Grid.Row="0" Width="130" Height="40" Margin="170,280,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
-            <Button x:Name="ResetRotatingPlatformDown" Content="{DynamicResource LangsSetRotatingPlatformDown}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}"/>
+            <Button x:Name="ResetRotatingPlatformDown" Content="{DynamicResource LangsSetRotatingPlatformDown}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" Click="ResetRotatingPlatformDown_Click"/>
         </Border>
         <Border Grid.Row="0" Width="130" Height="2" Margin="170,270,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1"/>
         <TextBox x:Name="ResetRotatingPlatformDownContent" Text="500" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" TextAlignment="Center" Padding="0,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170,230,0,0"/>
         <Border Grid.Row="0" Width="130" Height="40" Margin="10,360,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
-            <Button x:Name="ResetRotatingPlatformGetMotorLocation" Content="{DynamicResource LangsSetRotatingPlatformGetMotorLocation}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}"/>
+            <Button x:Name="ResetRotatingPlatformGetMotorLocation" Content="{DynamicResource LangsSetRotatingPlatformGetMotorLocation}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" Click="ResetRotatingPlatformGetMotorLocation_Click"/>
         </Border>
-        <TextBlock Text="(X,Y)=" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="170,0,0,73" Height="40" Padding="8,15,0,0"/>
-        <TextBox x:Name="ResetRotatingPlatformMotorLocationContent" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" Padding="8,15,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="230,0,0,73"/>
-        <Border Grid.Row="0" Width="180" Height="2" Margin="170,0,0,73" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderBrush="Gray" BorderThickness="1"/>
+        <TextBlock Text="(X,Y)=" FontSize="16" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="170,0,0,103" Height="40" Padding="8,15,0,0"/>
+        <TextBox x:Name="ResetRotatingPlatformMotorLocationContent" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" Padding="8,15,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="230,0,0,103"/>
+        <Border Grid.Row="0" Width="180" Height="2" Margin="170,0,0,103" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderBrush="Gray" BorderThickness="1"/>
 
 
-        <Border Grid.Row="0" Width="130" Height="40" Margin="10,0,0,10" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
-            <Button x:Name="ResetRotatingPlatformDo" Content="{DynamicResource LangsSetRotatingPlatformDo}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}"/>
+        <Border Grid.Row="0" Width="130" Height="40" Margin="10,0,0,40" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
+            <Button x:Name="ResetRotatingPlatformDo" Content="{DynamicResource LangsSetRotatingPlatformDo}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" Click="ResetRotatingPlatformDo_Click"/>
         </Border>
+        <Label Content="{DynamicResource LangsSetRotatingPlatformStatus}" Grid.Row="0" Width="70" Height="30" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="16"/>
+        <TextBlock x:Name="ResetRotatingPlatformStatus" Width="300" Height="30" Grid.Row="0" Margin="80,0,0,-5" HorizontalAlignment="Left" VerticalAlignment="Bottom" TextWrapping="Wrap" FontSize="16"/>
         <Border Grid.Row="1" Width="130" Height="40" Margin="0,0.25,10,0" HorizontalAlignment="Right" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Background="WhiteSmoke">
             <Button x:Name="ResetRotatingPlatformClose" Content="{DynamicResource LangsSetRotatingPlatformClose}" Width="130" Height="40"  FontSize="16" BorderThickness="0" Background="{x:Null}" Click="SetRotatingPlatformClose_Click"/>
         </Border>

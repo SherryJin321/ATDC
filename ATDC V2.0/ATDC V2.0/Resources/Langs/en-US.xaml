@@ -72,6 +72,8 @@
     <system:String x:Key="LangsSetRotatingPlatformRight">Right</system:String>
     <system:String x:Key="LangsSetRotatingPlatformDown">Down</system:String>
     <system:String x:Key="LangsSetRotatingPlatformGetMotorLocation">Get Location</system:String>
+    <system:String x:Key="LangsSetRotatingPlatformStatus">Status：</system:String>
+
 
     <!--前台代码，手动测试 页面-->
     <system:String x:Key="LangsManualTestTitle">Manual Test</system:String>
@@ -154,4 +156,8 @@
     <system:String x:Key="LangsCL500AZeroCalibrationSuccess">Zero calibration success.</system:String>
     <system:String x:Key="LangsCL500AZeroCalibrationFailure">Zero calibration failure.</system:String>
 
+    <!--后台代码，Set Rotating Platform 页面-->
+    <system:String x:Key="LangsSetRotatingPlatformTip1">Failure, please enter the integer.</system:String>
+    <system:String x:Key="LangsSetRotatingPlatformTip2">Failure, the integer rangs from -32000 to 32000.</system:String>
+    
 </ResourceDictionary>
